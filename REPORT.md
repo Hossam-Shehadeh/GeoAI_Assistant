@@ -5,10 +5,20 @@
 
 <div style="text-align: center; margin: 40px 0;">
 
+<img src="media/geoai-sql-generator-interface.png" alt="GeoAI Pro SQL Generator Interface" style="max-width: 90%; height: auto; border-radius: 10px; box-shadow: 0 6px 20px rgba(0,0,0,0.2);">
+
+<div style="margin-top: 15px; color: #666; font-style: italic; font-size: 0.95em;">
+*Figure 1: GeoAI Pro SQL Generator Interface - Demonstrating natural language to SQL conversion with real-time query execution and results display. The interface shows the SQL Generator feature with query input, generated SQL, and data results table.*
+</div>
+
+</div>
+
+<div style="text-align: center; margin: 30px 0;">
+
 <img src="media/geoai-assistant-banner-showcase.jpeg" alt="GeoAI Assistant Pro Banner" style="max-width: 85%; height: auto; border-radius: 10px; box-shadow: 0 6px 20px rgba(0,0,0,0.2);">
 
 <div style="margin-top: 15px; color: #666; font-style: italic; font-size: 0.95em;">
-*Figure 1: GeoAI Assistant Pro Main Interface - Showcasing the powerful features and modern design of the enterprise-grade QGIS plugin.*
+*Figure 2: GeoAI Assistant Pro Main Interface - Showcasing the powerful features and modern design of the enterprise-grade QGIS plugin.*
 </div>
 
 </div>
