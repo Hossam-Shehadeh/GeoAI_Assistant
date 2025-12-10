@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """
-Convert REPORT.md to PDF with images support
-Uses pandoc or Chrome headless
+Convert REPORT.md to PDF with formal technical/scientific report formatting
+Uses pandoc with LaTeX or Chrome headless with technical HTML template
 """
 
 import os
 import sys
 import subprocess
+import re
 from pathlib import Path
 
 def check_pandoc():
@@ -29,105 +30,232 @@ def check_chrome():
             return path
     return None
 
-def convert_with_pandoc(md_file, pdf_file):
-    """Convert Markdown to PDF using pandoc"""
-    try:
-        print("📄 Converting with pandoc...")
-        
-        # Convert images to absolute paths in markdown
-        md_content = Path(md_file).read_text(encoding='utf-8')
-        project_root = Path(md_file).parent.absolute()
-        
-        # Replace relative image paths with absolute paths
-        import re
-        def replace_image_path(match):
-            img_path = match.group(1)
-            if not img_path.startswith('/'):
-                abs_path = project_root / img_path
-                return f'![{match.group(2)}]({abs_path})'
-            return match.group(0)
-        
-        md_content = re.sub(r'!\[([^\]]*)\]\(([^)]+)\)', replace_image_path, md_content)
-        
-        # Write temporary markdown with absolute paths
-        temp_md = project_root / 'REPORT_temp.md'
-        temp_md.write_text(md_content, encoding='utf-8')
-        
-        # Convert with pandoc
-        result = subprocess.run([
-            'pandoc',
-            str(temp_md),
-            '-o', str(pdf_file),
-            '--pdf-engine=xelatex',
-            '--variable=geometry:margin=1in',
-            '--variable=fontsize:11pt',
-            '--variable=mainfont:DejaVu Sans',
-            '--toc',
-            '--toc-depth=3',
-            '--highlight-style=tango',
-            '--metadata=title:"GeoAI Assistant Pro - Enterprise Report"',
-            '--metadata=author:"GeoAI Assistant Pro Development Team"',
-            '--metadata=date:"December 2024"',
-        ], capture_output=True, timeout=120, cwd=str(project_root))
-        
-        # Clean up temp file
-        if temp_md.exists():
-            temp_md.unlink()
-        
-        if result.returncode == 0 and os.path.exists(pdf_file):
-            return True
-        else:
-            print(f"❌ Pandoc error: {result.stderr.decode()}")
-            return False
-            
-    except Exception as e:
-        print(f"❌ Error with pandoc: {e}")
-        return False
-
-def convert_with_chrome(md_file, pdf_file):
-    """Convert Markdown to PDF using Chrome (via HTML)"""
-    try:
-        print("📄 Converting with Chrome headless...")
-        
-        # First convert MD to HTML using markdown or pandoc
-        html_file = Path(md_file).with_suffix('.html')
-        project_root = Path(md_file).parent.absolute()
-        
-        # Try to convert MD to HTML
-        if check_pandoc():
-            subprocess.run(['pandoc', str(md_file), '-o', str(html_file), 
-                          '--standalone', '--css=github-markdown.css'],
-                         cwd=str(project_root), timeout=30)
-        else:
-            # Simple HTML wrapper
-            md_content = Path(md_file).read_text(encoding='utf-8')
-            html_content = f"""<!DOCTYPE html>
+def create_technical_html_template(md_content, project_root):
+    """Create HTML template for technical report"""
+    
+    # Convert markdown to HTML (simple conversion)
+    html_content = md_content
+    
+    # Replace \newpage with page break
+    html_content = html_content.replace('\\newpage', '<div style="page-break-before: always;"></div>')
+    
+    # Replace markdown headers
+    html_content = re.sub(r'^# (.+)$', r'<h1>\1</h1>', html_content, flags=re.MULTILINE)
+    html_content = re.sub(r'^## (.+)$', r'<h2>\1</h2>', html_content, flags=re.MULTILINE)
+    html_content = re.sub(r'^### (.+)$', r'<h3>\1</h3>', html_content, flags=re.MULTILINE)
+    html_content = re.sub(r'^#### (.+)$', r'<h4>\1</h4>', html_content, flags=re.MULTILINE)
+    
+    # Replace markdown images
+    html_content = re.sub(
+        r'!\[([^\]]*)\]\(([^)]+)\)',
+        lambda m: f'<figure style="text-align: center; margin: 20px 0; page-break-inside: avoid;"><img src="{m.group(2)}" alt="{m.group(1)}" style="max-width: 90%; height: auto; border: 1px solid #ddd; padding: 5px;"><figcaption style="font-style: italic; color: #666; margin-top: 10px;">{m.group(1)}</figcaption></figure>',
+        html_content
+    )
+    
+    # Replace markdown code blocks
+    html_content = re.sub(
+        r'```(\w+)?\n(.*?)```',
+        lambda m: f'<pre style="background: #f5f5f5; border: 1px solid #ddd; padding: 15px; border-radius: 4px; overflow-x: auto; page-break-inside: avoid;"><code>{m.group(2)}</code></pre>',
+        html_content,
+        flags=re.DOTALL
+    )
+    
+    # Replace inline code
+    html_content = re.sub(r'`([^`]+)`', r'<code style="background: #f5f5f5; padding: 2px 4px; border-radius: 3px;">\1</code>', html_content)
+    
+    # Replace markdown tables
+    def process_table(match):
+        table_text = match.group(0)
+        table_text = table_text.replace('|', '</td><td>')
+        table_text = table_text.replace('\n', '</tr><tr>')
+        return f'<table style="width: 100%; border-collapse: collapse; margin: 20px 0; page-break-inside: avoid;">{table_text}</table>'
+    
+    # Replace markdown lists
+    html_content = re.sub(r'^- (.+)$', r'<li>\1</li>', html_content, flags=re.MULTILINE)
+    html_content = re.sub(r'^\d+\. (.+)$', r'<li>\1</li>', html_content, flags=re.MULTILINE)
+    
+    # Wrap lists
+    html_content = re.sub(r'(<li>.*?</li>)', r'<ul>\1</ul>', html_content, flags=re.DOTALL)
+    
+    # Replace markdown bold
+    html_content = re.sub(r'\*\*([^*]+)\*\*', r'<strong>\1</strong>', html_content)
+    
+    # Replace markdown italic
+    html_content = re.sub(r'\*([^*]+)\*', r'<em>\1</em>', html_content)
+    
+    # Replace paragraphs
+    html_content = re.sub(r'\n\n', '</p><p>', html_content)
+    html_content = '<p>' + html_content + '</p>'
+    
+    technical_html = f"""<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>GeoAI Assistant Pro - Enterprise Report</title>
+    <title>GeoAI Assistant Pro - Technical Report</title>
     <style>
-        body {{ font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }}
-        img {{ max-width: 100%; height: auto; }}
-        h1, h2, h3 {{ color: #2c3e50; }}
-        code {{ background: #f4f4f4; padding: 2px 4px; border-radius: 3px; }}
-        pre {{ background: #f4f4f4; padding: 10px; border-radius: 5px; overflow-x: auto; }}
-        table {{ border-collapse: collapse; width: 100%; }}
-        th, td {{ border: 1px solid #ddd; padding: 8px; text-align: left; }}
-        th {{ background-color: #4CAF50; color: white; }}
+        @page {{
+            size: A4;
+            margin: 2.5cm 2cm;
+        }}
+        
+        body {{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 11pt;
+            line-height: 1.6;
+            color: #000;
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 0;
+            background: white;
+        }}
+        
+        h1 {{
+            font-size: 18pt;
+            font-weight: bold;
+            margin-top: 24pt;
+            margin-bottom: 12pt;
+            page-break-after: avoid;
+            border-bottom: 2px solid #000;
+            padding-bottom: 6pt;
+        }}
+        
+        h2 {{
+            font-size: 14pt;
+            font-weight: bold;
+            margin-top: 18pt;
+            margin-bottom: 10pt;
+            page-break-after: avoid;
+        }}
+        
+        h3 {{
+            font-size: 12pt;
+            font-weight: bold;
+            margin-top: 14pt;
+            margin-bottom: 8pt;
+            page-break-after: avoid;
+        }}
+        
+        h4 {{
+            font-size: 11pt;
+            font-weight: bold;
+            margin-top: 12pt;
+            margin-bottom: 6pt;
+        }}
+        
+        p {{
+            margin: 6pt 0;
+            text-align: justify;
+        }}
+        
+        ul, ol {{
+            margin: 10pt 0;
+            padding-left: 25pt;
+        }}
+        
+        li {{
+            margin: 4pt 0;
+        }}
+        
+        table {{
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15pt 0;
+            page-break-inside: avoid;
+            font-size: 10pt;
+        }}
+        
+        th {{
+            background-color: #f0f0f0;
+            border: 1px solid #000;
+            padding: 8pt;
+            text-align: left;
+            font-weight: bold;
+        }}
+        
+        td {{
+            border: 1px solid #000;
+            padding: 6pt;
+        }}
+        
+        pre {{
+            background: #f5f5f5;
+            border: 1px solid #ddd;
+            padding: 10pt;
+            border-radius: 4px;
+            overflow-x: auto;
+            page-break-inside: avoid;
+            font-family: 'Courier New', monospace;
+            font-size: 9pt;
+        }}
+        
+        code {{
+            background: #f5f5f5;
+            padding: 2pt 4pt;
+            border-radius: 3pt;
+            font-family: 'Courier New', monospace;
+            font-size: 9pt;
+        }}
+        
+        figure {{
+            margin: 20pt 0;
+            page-break-inside: avoid;
+            text-align: center;
+        }}
+        
+        img {{
+            max-width: 90%;
+            height: auto;
+            border: 1px solid #ddd;
+            padding: 5pt;
+        }}
+        
+        figcaption {{
+            font-style: italic;
+            color: #666;
+            margin-top: 8pt;
+            font-size: 9pt;
+        }}
+        
+        .page-break {{
+            page-break-before: always;
+        }}
+        
+        @media print {{
+            body {{
+                margin: 0;
+                padding: 0;
+            }}
+            
+            h1, h2, h3 {{
+                page-break-after: avoid;
+            }}
+            
+            figure, table, pre {{
+                page-break-inside: avoid;
+            }}
+        }}
     </style>
 </head>
 <body>
-{md_content}
+    {html_content}
 </body>
 </html>"""
-            html_file.write_text(html_content, encoding='utf-8')
+    
+    return technical_html
+
+def convert_with_chrome_technical(md_file, pdf_file):
+    """Convert Markdown to PDF using Chrome with technical HTML template"""
+    try:
+        print("📄 Converting with Chrome headless (Technical Report Format)...")
         
-        if not html_file.exists():
-            print("❌ Failed to create HTML file")
-            return False
+        project_root = Path(md_file).parent.absolute()
+        md_content = Path(md_file).read_text(encoding='utf-8')
         
-        # Convert HTML to PDF with Chrome
+        # Create technical HTML
+        html_content = create_technical_html_template(md_content, project_root)
+        html_file = project_root / 'REPORT_technical.html'
+        html_file.write_text(html_content, encoding='utf-8')
+        
         chrome = check_chrome()
         if not chrome:
             print("❌ Chrome not found")
@@ -171,27 +299,16 @@ def main():
         print(f"❌ Error: {md_file} not found")
         return False
     
-    print("🚀 Converting REPORT.md to PDF...")
+    print("🚀 Converting REPORT.md to PDF (Technical Report Format)...")
     print("="*60)
     print(f"📄 Input:  {md_file}")
     print(f"📄 Output: {pdf_file}")
     print("="*60)
     
-    # Try pandoc first
-    if check_pandoc():
-        print("\n✅ Pandoc found - using pandoc for conversion")
-        if convert_with_pandoc(md_file, pdf_file):
-            size = os.path.getsize(pdf_file) / 1024
-            print(f"\n✅ PDF Report created successfully!")
-            print(f"   File: {pdf_file}")
-            print(f"   Size: {size:.1f} KB")
-            print("="*60)
-            return True
-    
-    # Try Chrome as fallback
+    # Try Chrome with technical template
     if check_chrome():
-        print("\n✅ Chrome found - using Chrome headless for conversion")
-        if convert_with_chrome(md_file, pdf_file):
+        print("\n✅ Chrome found - using technical HTML template")
+        if convert_with_chrome_technical(md_file, pdf_file):
             size = os.path.getsize(pdf_file) / 1024
             print(f"\n✅ PDF Report created successfully!")
             print(f"   File: {pdf_file}")
@@ -201,14 +318,11 @@ def main():
     
     # Manual instructions
     print("\n❌ No conversion tool found")
-    print("\n💡 Manual conversion options:")
-    print("   1. Install pandoc: brew install pandoc (macOS)")
-    print("   2. Use online converter: https://www.markdowntopdf.com/")
-    print("   3. Use VS Code with 'Markdown PDF' extension")
-    print("   4. Use Chrome: Open REPORT.md → Print → Save as PDF")
+    print("\n💡 To create a formal technical PDF report:")
+    print("   1. Install Chrome browser")
+    print("   2. Or install pandoc + LaTeX for better quality")
     return False
 
 if __name__ == "__main__":
     success = main()
     sys.exit(0 if success else 1)
-
