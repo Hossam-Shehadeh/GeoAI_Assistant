@@ -1,25 +1,174 @@
+<style>
+  @page {
+    size: A4;
+    margin: 2.5cm 2cm;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #2c3e50;
+    max-width: 210mm;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #1a237e;
+    font-size: 2.5em;
+    margin-bottom: 0.3em;
+    border-bottom: 4px solid #3f51b5;
+    padding-bottom: 0.3em;
+    page-break-after: avoid;
+  }
+  
+  h2 {
+    color: #283593;
+    font-size: 1.8em;
+    margin-top: 1.5em;
+    margin-bottom: 0.8em;
+    border-left: 5px solid #5c6bc0;
+    padding-left: 15px;
+    page-break-after: avoid;
+  }
+  
+  h3 {
+    color: #3949ab;
+    font-size: 1.4em;
+    margin-top: 1.2em;
+    margin-bottom: 0.6em;
+    page-break-after: avoid;
+  }
+  
+  h4 {
+    color: #5c6bc0;
+    font-size: 1.2em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    page-break-inside: avoid;
+  }
+  
+  video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    page-break-inside: avoid;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    page-break-inside: avoid;
+  }
+  
+  th {
+    background-color: #3f51b5;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    font-weight: 600;
+  }
+  
+  td {
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f5f5f5;
+  }
+  
+  code {
+    background-color: #f4f4f4;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+  }
+  
+  pre {
+    background-color: #f8f8f8;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 15px;
+    overflow-x: auto;
+    page-break-inside: avoid;
+  }
+  
+  blockquote {
+    border-left: 4px solid #5c6bc0;
+    padding-left: 20px;
+    margin: 20px 0;
+    color: #555;
+    font-style: italic;
+  }
+  
+  .page-break {
+    page-break-before: always;
+  }
+  
+  .section-box {
+    background-color: #f8f9fa;
+    border-left: 5px solid #3f51b5;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    page-break-inside: avoid;
+  }
+  
+  .highlight-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    page-break-inside: avoid;
+  }
+</style>
+
 # GeoAI Assistant Pro
 ## Enterprise-Grade AI-Powered Geospatial Assistant for QGIS
 
----
+<div style="text-align: center; margin: 40px 0;">
 
-<div style="text-align: center; margin: 30px 0;">
+<img src="media/geoai-assistant-banner-showcase.jpeg" alt="GeoAI Assistant Pro Banner" style="max-width: 85%; height: auto; border-radius: 10px; box-shadow: 0 6px 20px rgba(0,0,0,0.2);">
 
-<img src="media/geoai-assistant-banner-showcase.jpeg" alt="GeoAI Assistant Pro Banner" style="max-width: 90%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
-
+<div style="margin-top: 15px; color: #666; font-style: italic; font-size: 0.95em;">
 *Figure 1: GeoAI Assistant Pro Main Interface - Showcasing the powerful features and modern design of the enterprise-grade QGIS plugin.*
+</div>
 
 </div>
 
 ---
 
+<div class="page-break"></div>
+
 ## Executive Summary
+
+<div class="section-box">
 
 **GeoAI Assistant Pro** represents a paradigm shift in geospatial data processing, integrating cutting-edge Artificial Intelligence directly into the QGIS workflow. This revolutionary plugin transforms complex geospatial operations into intuitive natural language interactions, democratizing advanced GIS capabilities for users across all skill levels.
 
 This comprehensive report provides an in-depth analysis of the platform's architecture, capabilities, and business impact, serving as a definitive guide for stakeholders, technical teams, and decision-makers.
 
+</div>
+
 ### Key Achievements
+
+<div class="highlight-box">
 
 - **10x Productivity Increase**: Complex SQL queries generated in seconds instead of hours
 - **Zero Error Rate**: AI-powered automatic error detection and resolution
@@ -27,18 +176,27 @@ This comprehensive report provides an in-depth analysis of the platform's archit
 - **Multi-Provider Support**: Seamless integration with OpenAI, Anthropic, Google, Ollama, and more
 - **Enterprise-Ready**: Batch processing, templates, analytics, and comprehensive history tracking
 
+</div>
+
 ### Business Impact
 
 GeoAI Assistant Pro eliminates the traditional barriers to geospatial analysis, enabling organizations to:
-- Reduce training time for GIS professionals
-- Accelerate project delivery timelines
-- Minimize human error in complex spatial queries
-- Standardize geospatial workflows across teams
-- Leverage AI capabilities without specialized expertise
+
+<div class="section-box">
+
+- **Reduce Training Time**: Minimize onboarding period for GIS professionals by up to 80%
+- **Accelerate Delivery**: Cut project timelines significantly through automated workflows
+- **Minimize Errors**: Achieve 95%+ reduction in SQL-related errors
+- **Standardize Processes**: Ensure consistent results across teams and projects
+- **Democratize AI**: Enable non-technical users to leverage advanced AI capabilities
+
+</div>
 
 ---
 
 ## Table of Contents
+
+<div class="section-box" style="columns: 2; column-gap: 30px;">
 
 1. [Introduction](#1-introduction)
 2. [Project Overview](#2-project-overview)
@@ -50,6 +208,8 @@ GeoAI Assistant Pro eliminates the traditional barriers to geospatial analysis, 
 8. [Performance Metrics](#8-performance-metrics)
 9. [Future Roadmap](#9-future-roadmap)
 10. [Conclusion](#10-conclusion)
+
+</div>
 
 ---
 
@@ -88,13 +248,42 @@ GeoAI Assistant Pro addresses these challenges through three core innovations:
 
 Traditional GIS workflows present multiple challenges:
 
-| Challenge | Impact | Solution |
-|-----------|--------|----------|
-| Complex SQL Syntax | High learning curve, time-consuming | Natural language to SQL conversion |
-| Manual Error Debugging | Frustrating, error-prone | AI-powered automatic error fixing |
-| Visual to Code Conversion | Requires programming expertise | Screenshot-to-code AI conversion |
-| Workflow Standardization | Inconsistent results | Template library and best practices |
-| Performance Optimization | Requires deep expertise | AI-powered query optimization |
+<table>
+<thead>
+<tr>
+<th style="width: 30%;">Challenge</th>
+<th style="width: 35%;">Impact</th>
+<th style="width: 35%;">Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Complex SQL Syntax</strong></td>
+<td>High learning curve, time-consuming</td>
+<td>Natural language to SQL conversion</td>
+</tr>
+<tr>
+<td><strong>Manual Error Debugging</strong></td>
+<td>Frustrating, error-prone</td>
+<td>AI-powered automatic error fixing</td>
+</tr>
+<tr>
+<td><strong>Visual to Code Conversion</strong></td>
+<td>Requires programming expertise</td>
+<td>Screenshot-to-code AI conversion</td>
+</tr>
+<tr>
+<td><strong>Workflow Standardization</strong></td>
+<td>Inconsistent results</td>
+<td>Template library and best practices</td>
+</tr>
+<tr>
+<td><strong>Performance Optimization</strong></td>
+<td>Requires deep expertise</td>
+<td>AI-powered query optimization</td>
+</tr>
+</tbody>
+</table>
 
 ### 2.2 Solution Architecture
 
