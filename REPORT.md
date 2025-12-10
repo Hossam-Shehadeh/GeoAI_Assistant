@@ -1,17 +1,3 @@
----
-title: "GeoAI Assistant Pro - Technical Report"
-subtitle: "Enterprise-Grade AI-Powered Geospatial Assistant for QGIS"
-author: "GeoAI Assistant Pro Development Team"
-date: "December 2024"
-documentclass: article
-geometry: margin=2.5cm
-fontsize: 11pt
-linestretch: 1.5
-toc: true
-toc-depth: 3
-numbersections: true
----
-
 <div style="page-break-after: always; height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 40px;">
 
 <div style="margin-bottom: 60px;">
@@ -31,8 +17,6 @@ numbersections: true
 </div>
 
 </div>
-
-\newpage
 
 # Executive Summary
 
@@ -57,8 +41,6 @@ GeoAI Assistant Pro eliminates the traditional barriers to geospatial analysis, 
 - **Minimize Errors**: Achieve 95%+ reduction in SQL-related errors
 - **Standardize Processes**: Ensure consistent results across teams and projects
 - **Democratize AI**: Enable non-technical users to leverage advanced AI capabilities
-
-\newpage
 
 # Introduction
 

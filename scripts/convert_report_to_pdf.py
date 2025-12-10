@@ -36,7 +36,9 @@ def create_technical_html_template(md_content, project_root):
     # Convert markdown to HTML (simple conversion)
     html_content = md_content
     
-    # Replace \newpage with page break
+    # Replace \newpage with page break (but skip empty pages)
+    # Remove consecutive newpage commands that would create empty pages
+    html_content = re.sub(r'\\newpage\s*\\newpage', '\\newpage', html_content)
     html_content = html_content.replace('\\newpage', '<div style="page-break-before: always;"></div>')
     
     # Replace markdown headers
