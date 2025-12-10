@@ -162,7 +162,7 @@ Monitor plugin usage and performance metrics.
 **Option A: Git Clone (Recommended)**
 ```bash
 cd ~/Library/Application\ Support/QGIS/QGIS3/profiles/default/python/plugins/
-git clone <repository-url> GeoAI_Assistant
+git clone https://github.com/Hossam-Shehadeh/GeoAI_Assistant.git GeoAI_Assistant
 ```
 
 **Option B: Manual Download**
@@ -615,7 +615,7 @@ We welcome contributions! Here's how you can help:
 
 1. **Fork the Repository**
    ```bash
-   git clone <your-fork-url>
+   git clone https://github.com/Hossam-Shehadeh/GeoAI_Assistant.git
    cd GeoAI_Assistant
    ```
 
@@ -652,7 +652,7 @@ We welcome contributions! Here's how you can help:
 
 ```bash
 # Clone repository
-git clone <repository-url>
+git clone https://github.com/Hossam-Shehadeh/GeoAI_Assistant.git
 cd GeoAI_Assistant
 
 # Install dependencies
