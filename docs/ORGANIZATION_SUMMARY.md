@@ -21,12 +21,12 @@
 
 #### Media Files (moved to `media/`)
 - Screenshots renamed:
-  - `demo-screenshot-1.jpeg`
-  - `demo-screenshot-2.jpeg`
+  - `geoai-assistant-banner-showcase.jpeg` (Banner/Header image)
+  - `complete-workflow-overview-diagram.jpeg` (Workflow diagram)
 - Videos renamed:
-  - `demo-workflow-1.mp4`
-  - `demo-workflow-2.mp4`
-  - `demo-workflow-3.mp4`
+  - `natural-language-sql-generation-demo.mp4` (SQL Generation workflow)
+  - `model-builder-to-python-converter-demo.mp4` (Model Converter workflow)
+  - `ai-powered-error-fixing-workflow-demo.mp4` (Error Fixing workflow)
 
 ### 3. Root Files
 - ✅ `README.md` - Comprehensive, creative README with workflow
@@ -81,11 +81,11 @@ GeoAI_Assistant/
 │   └── [other scripts...]
 │
 └── media/                       # 🎬 All media files
-    ├── demo-screenshot-1.jpeg
-    ├── demo-screenshot-2.jpeg
-    ├── demo-workflow-1.mp4
-    ├── demo-workflow-2.mp4
-    └── demo-workflow-3.mp4
+    ├── geoai-assistant-banner-showcase.jpeg
+    ├── complete-workflow-overview-diagram.jpeg
+    ├── natural-language-sql-generation-demo.mp4
+    ├── model-builder-to-python-converter-demo.mp4
+    └── ai-powered-error-fixing-workflow-demo.mp4
 ```
 
 ## 🎯 README Features

@@ -101,11 +101,11 @@ GeoAI_Assistant/
 │   └── [other utility scripts]
 │
 └── media/                       # Media files
-    ├── demo-screenshot-1.jpeg
-    ├── demo-screenshot-2.jpeg
-    ├── demo-workflow-1.mp4
-    ├── demo-workflow-2.mp4
-    └── demo-workflow-3.mp4
+    ├── geoai-assistant-banner-showcase.jpeg
+    ├── complete-workflow-overview-diagram.jpeg
+    ├── natural-language-sql-generation-demo.mp4
+    ├── model-builder-to-python-converter-demo.mp4
+    └── ai-powered-error-fixing-workflow-demo.mp4
 ```
 
 ## File Organization

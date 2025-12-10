@@ -15,7 +15,7 @@
 
 ---
 
-![GeoAI Assistant Pro Banner](media/demo-screenshot-1.jpeg)
+![GeoAI Assistant Pro Banner](media/geoai-assistant-banner-showcase.jpeg)
 
 </div>
 
@@ -277,7 +277,7 @@ Use the model selector in the top bar:
 
 ### Complete Workflow Diagram
 
-![Workflow Overview](media/demo-screenshot-2.jpeg)
+![Workflow Overview](media/complete-workflow-overview-diagram.jpeg)
 
 ### Step-by-Step Workflow
 
@@ -301,7 +301,7 @@ Execution
 Results Display
 ```
 
-**Video Demo**: [Watch SQL Generation Workflow](media/demo-workflow-1.mp4)
+**Video Demo**: [Watch SQL Generation Workflow](media/natural-language-sql-generation-demo.mp4)
 
 #### 2. **Model Converter Workflow**
 
@@ -319,7 +319,7 @@ Error Fixing (if needed)
 Python Code Output
 ```
 
-**Video Demo**: [Watch Model Converter Workflow](media/demo-workflow-2.mp4)
+**Video Demo**: [Watch Model Converter Workflow](media/model-builder-to-python-converter-demo.mp4)
 
 #### 3. **Error Fixing Workflow**
 
@@ -337,7 +337,7 @@ Auto-Apply Fix
 Re-execution
 ```
 
-**Video Demo**: [Watch Error Fixing Workflow](media/demo-workflow-3.mp4)
+**Video Demo**: [Watch Error Fixing Workflow](media/ai-powered-error-fixing-workflow-demo.mp4)
 
 ### Typical Use Cases
 
