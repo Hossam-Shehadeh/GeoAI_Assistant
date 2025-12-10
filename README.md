@@ -369,6 +369,8 @@ Re-execution
 
 ## 🎬 Media Gallery
 
+> **📹 Watch All Videos**: [Open Video Demonstrations Page](docs/videos.html) - View all videos directly in your browser without download!
+
 ### 📸 Screenshots
 
 #### Main Banner
