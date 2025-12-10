@@ -1,13 +1,11 @@
 # GeoAI Assistant Pro
 ## Enterprise-Grade AI-Powered Geospatial Assistant for QGIS
 
-**Version 2.0.0** | **MIT License** | **December 2024**
-
 ---
 
-<div style="text-align: center;">
+<div style="text-align: center; margin: 30px 0;">
 
-![GeoAI Assistant Pro Banner](media/geoai-assistant-banner-showcase.jpeg)
+<img src="media/geoai-assistant-banner-showcase.jpeg" alt="GeoAI Assistant Pro Banner" style="max-width: 90%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
 
 *Figure 1: GeoAI Assistant Pro Main Interface - Showcasing the powerful features and modern design of the enterprise-grade QGIS plugin.*
 
@@ -18,6 +16,8 @@
 ## Executive Summary
 
 **GeoAI Assistant Pro** represents a paradigm shift in geospatial data processing, integrating cutting-edge Artificial Intelligence directly into the QGIS workflow. This revolutionary plugin transforms complex geospatial operations into intuitive natural language interactions, democratizing advanced GIS capabilities for users across all skill levels.
+
+This comprehensive report provides an in-depth analysis of the platform's architecture, capabilities, and business impact, serving as a definitive guide for stakeholders, technical teams, and decision-makers.
 
 ### Key Achievements
 
@@ -204,13 +204,21 @@ JOIN parks p ON ST_DWithin(b.geom, p.geom, 500)
 
 #### Main Interface Banner
 
-![GeoAI Assistant Pro Banner](media/geoai-assistant-banner-showcase.jpeg)
+<div style="text-align: center; margin: 20px 0;">
+
+<img src="media/geoai-assistant-banner-showcase.jpeg" alt="GeoAI Assistant Pro Banner" style="max-width: 85%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+
+</div>
 
 *Figure 2: Main Interface - The comprehensive dashboard showcasing all features including SQL Generator, Model Converter, Smart Assistant, Error Fixer, and Data Analysis tools.*
 
 #### Complete Workflow Overview
 
-![Complete Workflow Overview](media/complete-workflow-overview-diagram.jpeg)
+<div style="text-align: center; margin: 20px 0;">
+
+<img src="media/complete-workflow-overview-diagram.jpeg" alt="Complete Workflow Overview" style="max-width: 90%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+
+</div>
 
 *Figure 3: Workflow Diagram - Complete visual representation of all workflows, data flows, and feature interactions in GeoAI Assistant Pro.*
 
@@ -218,10 +226,14 @@ JOIN parks p ON ST_DWithin(b.geom, p.geom, 500)
 
 #### 4.2.1 Natural Language SQL Generation
 
-<video width="100%" controls style="max-width: 800px; margin: 20px 0;">
+<div style="text-align: center; margin: 25px 0;">
+
+<video width="100%" controls style="max-width: 750px; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
   <source src="https://github.com/Hossam-Shehadeh/GeoAI_Assistant/raw/main/media/natural-language-sql-generation-demo.mp4" type="video/mp4">
   Your browser does not support the video tag. [Download Video (6.5 MB)](https://github.com/Hossam-Shehadeh/GeoAI_Assistant/raw/main/media/natural-language-sql-generation-demo.mp4)
 </video>
+
+</div>
 
 **📥 Download Video**: [Natural Language SQL Generation Workflow (6.5 MB)](https://github.com/Hossam-Shehadeh/GeoAI_Assistant/raw/main/media/natural-language-sql-generation-demo.mp4)
 
@@ -250,10 +262,14 @@ JOIN parks p ON ST_DWithin(b.geom, p.geom, 500)
 
 #### 4.2.2 Model Builder to Python Converter
 
-<video width="100%" controls style="max-width: 800px; margin: 20px 0;">
+<div style="text-align: center; margin: 25px 0;">
+
+<video width="100%" controls style="max-width: 750px; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
   <source src="https://github.com/Hossam-Shehadeh/GeoAI_Assistant/raw/main/media/model-builder-to-python-converter-demo.mp4" type="video/mp4">
   Your browser does not support the video tag. [Download Video (9.5 MB)](https://github.com/Hossam-Shehadeh/GeoAI_Assistant/raw/main/media/model-builder-to-python-converter-demo.mp4)
 </video>
+
+</div>
 
 **📥 Download Video**: [Model Builder to Python Converter Workflow (9.5 MB)](https://github.com/Hossam-Shehadeh/GeoAI_Assistant/raw/main/media/model-builder-to-python-converter-demo.mp4)
 
@@ -282,10 +298,14 @@ JOIN parks p ON ST_DWithin(b.geom, p.geom, 500)
 
 #### 4.2.3 AI-Powered Error Fixing
 
-<video width="100%" controls style="max-width: 800px; margin: 20px 0;">
+<div style="text-align: center; margin: 25px 0;">
+
+<video width="100%" controls style="max-width: 750px; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
   <source src="https://github.com/Hossam-Shehadeh/GeoAI_Assistant/raw/main/media/ai-powered-error-fixing-workflow-demo.mp4" type="video/mp4">
   Your browser does not support the video tag. [Download Video (2.0 MB)](https://github.com/Hossam-Shehadeh/GeoAI_Assistant/raw/main/media/ai-powered-error-fixing-workflow-demo.mp4)
 </video>
+
+</div>
 
 **📥 Download Video**: [AI-Powered Error Fixing Workflow (2.0 MB)](https://github.com/Hossam-Shehadeh/GeoAI_Assistant/raw/main/media/ai-powered-error-fixing-workflow-demo.mp4)
 
@@ -668,19 +688,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Discussions**: [GitHub Discussions](https://github.com/Hossam-Shehadeh/GeoAI_Assistant/discussions)
 
 ---
-
-**Document Version**: 1.0  
-**Last Updated**: December 2024  
-**Author**: GeoAI Assistant Pro Development Team  
-**License**: MIT
-
----
-
-<div style="text-align: center;">
-
-**Made with ❤️ for the QGIS Community**
-
-*Transforming Geospatial Workflows with Artificial Intelligence*
-
-</div>
 
