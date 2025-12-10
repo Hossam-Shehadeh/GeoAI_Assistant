@@ -675,11 +675,6 @@ python -m pytest tests/
 
 ---
 
-## 📝 License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
----
 
 ## 🙏 Acknowledgments
 
@@ -692,9 +687,8 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ## 📞 Support
 
-- **Issues**: [GitHub Issues](https://github.com/your-repo/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/your-repo/discussions)
-- **Email**: support@geoai.example.com
+- **Issues**: [GitHub Issues](https://github.com/Hossam-Shehadeh/GeoAI_Assistant.git/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/Hossam-Shehadeh/GeoAI_Assistant.git/discussions)
 
 ---
 
@@ -711,14 +705,3 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ---
 
-<div align="center">
-
-**Made with ❤️ for the QGIS Community**
-
-[⭐ Star us on GitHub](https://github.com/your-repo) • [📖 Documentation](docs/) • [🐛 Report Bug](https://github.com/your-repo/issues) • [💡 Request Feature](https://github.com/your-repo/issues)
-
----
-
-**Version 2.0.0** | **MIT License** | **© 2024 GeoAI Team**
-
-</div>
