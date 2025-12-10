@@ -12,7 +12,6 @@
 
 <div style="margin-top: 60px; border-top: 2px solid #1a237e; padding-top: 30px; width: 80%;">
 <p style="font-size: 14pt; margin: 10px 0; color: #333;">Technical Report</p>
-<p style="font-size: 12pt; margin: 5px 0; color: #666;">December 2024</p>
 <p style="font-size: 11pt; margin: 20px 0 0 0; color: #888;">GeoAI Assistant Pro Development Team</p>
 </div>
 
