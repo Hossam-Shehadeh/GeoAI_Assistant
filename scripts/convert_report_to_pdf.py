@@ -220,6 +220,65 @@ def create_technical_html_template(md_content, project_root):
             page-break-before: always;
         }}
         
+        .cover-page {{
+            page-break-after: always;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px;
+            margin: 0;
+        }}
+        
+        .cover-page h1 {{
+            font-size: 32pt;
+            font-weight: bold;
+            margin: 0;
+            padding: 0;
+            border: none;
+            color: #1a237e;
+        }}
+        
+        .cover-page h2 {{
+            font-size: 18pt;
+            font-weight: normal;
+            margin: 15px 0 0 0;
+            padding: 0;
+            color: #3949ab;
+            font-style: italic;
+        }}
+        
+        .cover-page h3 {{
+            font-size: 14pt;
+            font-weight: normal;
+            margin: 10px 0 0 0;
+            padding: 0;
+            color: #5c6bc0;
+        }}
+        
+        .cover-page img {{
+            max-width: 70%;
+            height: auto;
+            border: 2px solid #ddd;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: 40px 0;
+        }}
+        
+        .cover-page .footer {{
+            margin-top: 60px;
+            border-top: 2px solid #1a237e;
+            padding-top: 30px;
+            width: 80%;
+        }}
+        
+        .cover-page .footer p {{
+            margin: 10px 0;
+            text-align: center;
+        }}
+        
         @media print {{
             body {{
                 margin: 0;

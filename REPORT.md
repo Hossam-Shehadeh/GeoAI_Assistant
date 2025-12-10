@@ -12,6 +12,26 @@ toc-depth: 3
 numbersections: true
 ---
 
+<div style="page-break-after: always; height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 40px;">
+
+<div style="margin-bottom: 60px;">
+<h1 style="font-size: 32pt; font-weight: bold; margin: 0; padding: 0; border: none; color: #1a237e;">GeoAI Assistant Pro</h1>
+<h2 style="font-size: 18pt; font-weight: normal; margin: 15px 0 0 0; padding: 0; color: #3949ab; font-style: italic;">Enterprise-Grade AI-Powered Geospatial Assistant</h2>
+<h3 style="font-size: 14pt; font-weight: normal; margin: 10px 0 0 0; padding: 0; color: #5c6bc0;">for QGIS</h3>
+</div>
+
+<div style="margin: 40px 0;">
+<img src="media/geoai-sql-generator-interface.png" alt="GeoAI Pro Interface" style="max-width: 70%; height: auto; border: 2px solid #ddd; padding: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+</div>
+
+<div style="margin-top: 60px; border-top: 2px solid #1a237e; padding-top: 30px; width: 80%;">
+<p style="font-size: 14pt; margin: 10px 0; color: #333;">Technical Report</p>
+<p style="font-size: 12pt; margin: 5px 0; color: #666;">December 2024</p>
+<p style="font-size: 11pt; margin: 20px 0 0 0; color: #888;">GeoAI Assistant Pro Development Team</p>
+</div>
+
+</div>
+
 \newpage
 
 # Executive Summary
