@@ -69,6 +69,7 @@ docs/_build/
 *.docx
 !docs/*.pdf
 !docs/*.docx
+!REPORT.pdf
 
 # Media files (keep organized media, ignore temp)
 media/temp/
