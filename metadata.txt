@@ -1,0 +1,16 @@
+[general]
+name=GeoAI Assistant Pro
+qgisMinimumVersion=3.0
+description=Advanced AI-powered geospatial assistant with multi-provider LLM support, query history, batch processing, and enterprise features
+version=2.0.0
+author=GeoAI Team
+email=support@geoai.example.com
+
+about=Professional-grade QGIS plugin for intelligent SQL generation, automatic error fixing, image-to-code conversion, and advanced geospatial analysis. Features query history, batch processing, custom templates, performance monitoring, and collaboration tools.
+
+tags=AI, SQL, automation, LLM, assistant, enterprise, professional
+category=Plugins
+icon=icon.png
+experimental=False
+deprecated=False
+

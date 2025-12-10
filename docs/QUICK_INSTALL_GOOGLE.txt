@@ -1,0 +1,38 @@
+╔══════════════════════════════════════════════════════════════╗
+║     Quick Fix: Install Google Generative AI SDK              ║
+╚══════════════════════════════════════════════════════════════╝
+
+STEP 1: Find QGIS Python Path
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Open QGIS
+2. Go to: Plugins → Python Console
+3. Run this command:
+   import sys
+   print(sys.executable)
+4. Copy the path shown (e.g., /Applications/QGIS.app/...)
+
+STEP 2: Install Package
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Open Terminal and run:
+   /path/from/step1 -m pip install google-generativeai
+
+Example:
+   /Applications/QGIS.app/Contents/MacOS/bin/python3 -m pip install google-generativeai
+
+STEP 3: Verify
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+In QGIS Python Console, run:
+   import google.generativeai
+   print("✅ Installed!")
+
+STEP 4: Configure API Key
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Get API key: https://makersuite.google.com/app/apikey
+2. Edit .env file in plugin directory
+3. Add: GOOGLE_API_KEY=your-key-here
+4. Restart QGIS
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📚 Full guide: INSTALL_GOOGLE_SDK.md
+

@@ -1,0 +1,137 @@
+═══════════════════════════════════════════════════════════════════
+  📄 CREATE PDF AND WORD DOCUMENTATION - FINAL INSTRUCTIONS
+═══════════════════════════════════════════════════════════════════
+
+✅ HTML UPDATED!
+   - ✅ Download buttons added in navbar (PDF & Word)
+   - ✅ Footer text removed (version/license info removed)
+   - ✅ Fixed navbar with modern design
+
+📁 Location:
+   /Users/me/Library/Application Support/QGIS/QGIS3/profiles/default/python/plugins/spatial-projects/GeoAI_Assistant_Pro_Clean/
+
+═══════════════════════════════════════════════════════════════════
+  STEP 1: CREATE PDF (30 SECONDS)
+═══════════════════════════════════════════════════════════════════
+
+1. Open documentation.html in your browser:
+   - Double-click the file
+   - Or right-click → Open With → Chrome/Safari
+
+2. Print to PDF:
+   - Press Cmd+P (Mac) or Ctrl+P (Windows)
+   - In print dialog:
+     * Select "Save as PDF" as destination
+     * Uncheck "Headers and footers" (if option available)
+     * Click "Save"
+   - Name it: documentation.pdf
+   - Save in the same folder as documentation.html
+
+✅ DONE! PDF created!
+
+═══════════════════════════════════════════════════════════════════
+  STEP 2: CREATE WORD DOCUMENT (2 MINUTES)
+═══════════════════════════════════════════════════════════════════
+
+OPTION A: Using pandoc (Best Quality)
+
+1. Install pandoc (one-time):
+   brew install pandoc
+
+2. Open Terminal and run:
+   cd "/Users/me/Library/Application Support/QGIS/QGIS3/profiles/default/python/plugins/spatial-projects/GeoAI_Assistant_Pro_Clean"
+   pandoc README.md -o documentation.docx --toc --toc-depth=3
+
+✅ DONE! Word document created!
+
+
+OPTION B: Using Typora (No Command Line)
+
+1. Download Typora: https://typora.io
+2. Open README.md in Typora
+3. File → Export → Word (.docx)
+4. Save as: documentation.docx
+
+✅ DONE!
+
+
+OPTION C: Online Converter
+
+1. Go to: https://cloudconvert.com/md-to-docx
+2. Upload README.md
+3. Convert
+4. Download documentation.docx
+
+✅ DONE!
+
+═══════════════════════════════════════════════════════════════════
+  STEP 3: VERIFY FILES
+═══════════════════════════════════════════════════════════════════
+
+After creating files, verify they exist:
+
+cd "/Users/me/Library/Application Support/QGIS/QGIS3/profiles/default/python/plugins/spatial-projects/GeoAI_Assistant_Pro_Clean"
+
+ls -lh documentation.pdf documentation.docx
+
+Expected:
+- documentation.pdf: 500KB - 2MB
+- documentation.docx: 100KB - 500KB
+
+═══════════════════════════════════════════════════════════════════
+  WHAT WAS CHANGED
+═══════════════════════════════════════════════════════════════════
+
+✅ documentation.html:
+   - Added download buttons in navbar (PDF & Word)
+   - Removed footer text about "Made with ❤️" and version/license
+   - Footer now empty/minimal
+   - Download buttons styled with gradients
+   - Buttons link to documentation.pdf and documentation.docx
+
+✅ Files to create:
+   - documentation.pdf (from HTML)
+   - documentation.docx (from README.md)
+
+═══════════════════════════════════════════════════════════════════
+  QUICK COMMAND REFERENCE
+═══════════════════════════════════════════════════════════════════
+
+# Navigate to folder
+cd "/Users/me/Library/Application Support/QGIS/QGIS3/profiles/default/python/plugins/spatial-projects/GeoAI_Assistant_Pro_Clean"
+
+# Create PDF (Chrome method)
+/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome \
+  --headless --disable-gpu \
+  --print-to-pdf=documentation.pdf \
+  file://$(pwd)/documentation.html
+
+# Create Word (pandoc method)
+pandoc README.md -o documentation.docx --toc --toc-depth=3
+
+═══════════════════════════════════════════════════════════════════
+  TROUBLESHOOTING
+═══════════════════════════════════════════════════════════════════
+
+❌ Download buttons don't work
+   → Make sure documentation.pdf and documentation.docx exist
+   → Files must be in same folder as documentation.html
+
+❌ "pandoc not found"
+   → Install: brew install pandoc
+   → Or use Typora/online converter
+
+❌ "Chrome not found"
+   → Use browser method: Open HTML → Print → Save as PDF
+
+❌ Files are empty
+   → Check source files exist (documentation.html, README.md)
+   → Try different method
+
+═══════════════════════════════════════════════════════════════════
+
+🎉 Once PDF and DOCX files are created, the download buttons in the
+   HTML navbar will work automatically!
+
+═══════════════════════════════════════════════════════════════════
+

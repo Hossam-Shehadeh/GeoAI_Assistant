@@ -1,0 +1,96 @@
+═══════════════════════════════════════════════════════════════════
+  🚀 RUN create_both_documents.py - INSTRUCTIONS
+═══════════════════════════════════════════════════════════════════
+
+STEP 1: OPEN TERMINAL
+═══════════════════════════════════════════════════════════════════
+
+1. Open Terminal application on your Mac
+   → Press Cmd+Space
+   → Type "Terminal"
+   → Press Enter
+
+
+STEP 2: NAVIGATE TO FOLDER
+═══════════════════════════════════════════════════════════════════
+
+Copy and paste this command:
+
+cd "/Users/me/Library/Application Support/QGIS/QGIS3/profiles/default/python/plugins/spatial-projects/GeoAI_Assistant_Pro_Clean"
+
+
+STEP 3: RUN THE SCRIPT
+═══════════════════════════════════════════════════════════════════
+
+Copy and paste this command:
+
+python3 create_both_documents.py
+
+
+═══════════════════════════════════════════════════════════════════
+  WHAT THE SCRIPT DOES
+═══════════════════════════════════════════════════════════════════
+
+1. Creates PDF from documentation_report.html
+   → Output: GeoAI_Assistant_Pro_Report.pdf
+
+2. Creates Word from README.md
+   → Output: GeoAI_Assistant_Pro_Documentation.docx
+
+3. Shows summary of what was created
+
+
+═══════════════════════════════════════════════════════════════════
+  EXPECTED OUTPUT
+═══════════════════════════════════════════════════════════════════
+
+🚀 Creating PDF and Word Documents
+============================================================
+📁 Working directory: /path/to/folder
+
+📄 Creating PDF Report...
+✅ PDF created: GeoAI_Assistant_Pro_Report.pdf (XXX KB)
+
+📝 Creating Word Document...
+✅ Word created: GeoAI_Assistant_Pro_Documentation.docx (XXX KB)
+
+============================================================
+📊 Summary:
+============================================================
+✅ PDF: GeoAI_Assistant_Pro_Report.pdf
+✅ Word: GeoAI_Assistant_Pro_Documentation.docx
+============================================================
+
+🎉 Both documents created successfully!
+
+
+═══════════════════════════════════════════════════════════════════
+  IF SCRIPT FAILS
+═══════════════════════════════════════════════════════════════════
+
+If PDF creation fails:
+→ Manual: Open documentation_report.html → Print → Save as PDF
+
+If Word creation fails:
+→ Install pandoc: brew install pandoc
+→ Or use Typora: Open README.md → Export → Word
+
+
+═══════════════════════════════════════════════════════════════════
+  QUICK COPY-PASTE COMMANDS
+═══════════════════════════════════════════════════════════════════
+
+# Copy and paste these commands one by one in Terminal:
+
+cd "/Users/me/Library/Application Support/QGIS/QGIS3/profiles/default/python/plugins/spatial-projects/GeoAI_Assistant_Pro_Clean"
+
+python3 create_both_documents.py
+
+
+═══════════════════════════════════════════════════════════════════
+
+✅ Follow these steps to run the script!
+
+═══════════════════════════════════════════════════════════════════
+
+

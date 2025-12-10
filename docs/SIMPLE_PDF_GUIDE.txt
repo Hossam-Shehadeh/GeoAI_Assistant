@@ -1,0 +1,24 @@
+═══════════════════════════════════════════════════════════════════
+  📄 CREATE PDF - 3 SIMPLE STEPS
+═══════════════════════════════════════════════════════════════════
+
+STEP 1: Open documentation.html in your browser
+   → Double-click the file
+
+STEP 2: Press Cmd+P (Mac) or Ctrl+P (Windows)
+   → Select "Save as PDF"
+   → Click "Save"
+
+STEP 3: Save as "documentation.pdf" in the SAME folder
+   → Navigate to the folder containing documentation.html
+   → Name: documentation.pdf
+   → Click "Save"
+
+✅ DONE! PDF created!
+
+═══════════════════════════════════════════════════════════════════
+
+Then refresh the page (Cmd+R) and click the download button again.
+
+═══════════════════════════════════════════════════════════════════
+

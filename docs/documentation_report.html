@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoAI Assistant Pro - Technical Report</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 2cm;
+            @top-center {
+                content: "GeoAI Assistant Pro - Technical Documentation";
+                font-size: 9pt;
+                color: #667eea;
+            }
+            @bottom-right {
+                content: "Page " counter(page) " of " counter(pages);
+                font-size: 9pt;
+                color: #718096;
+            }
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            line-height: 1.8;
+            color: #2d3748;
+            background: #ffffff;
+            font-size: 11pt;
+        }
+        
+        /* Cover Page */
+        .cover-page {
+            page-break-after: always;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 4cm;
+        }
+        
+        .cover-page h1 {
+            font-size: 4em;
+            margin-bottom: 0.5em;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+            font-weight: 700;
+        }
+        
+        .cover-page .subtitle {
+            font-size: 1.8em;
+            margin-bottom: 2em;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+        
+        .cover-page .version {
+            font-size: 1.2em;
+            margin-top: 3em;
+            padding: 1em 2em;
+            background: rgba(255,255,255,0.2);
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .cover-page .date {
+            margin-top: 2em;
+            font-size: 1em;
+            opacity: 0.9;
+        }
+        
+        /* Table of Contents */
+        .toc-page {
+            page-break-after: always;
+            padding: 2cm;
+        }
+        
+        .toc-page h1 {
+            font-size: 2.5em;
+            color: #667eea;
+            margin-bottom: 1em;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 0.5em;
+        }
+        
+        .toc-page ul {
+            list-style: none;
+            margin-left: 0;
+        }
+        
+        .toc-page li {
+            margin: 1em 0;
+            padding-left: 2em;
+            position: relative;
+        }
+        
+        .toc-page li::before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+        }
+        
+        .toc-page a {
+            color: #2d3748;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+        
+        .toc-page a::after {
+            content: leader('.') ' ' target-counter(attr(href), page);
+            color: #718096;
+        }
+        
+        /* Content Pages */
+        .content-page {
+            page-break-before: always;
+            padding: 2cm;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            color: #667eea;
+            margin: 1.5em 0 1em 0;
+            padding-bottom: 0.5em;
+            border-bottom: 4px solid #667eea;
+            page-break-after: avoid;
+        }
+        
+        h2 {
+            font-size: 2em;
+            color: #764ba2;
+            margin: 1.5em 0 1em 0;
+            page-break-after: avoid;
+        }
+        
+        h3 {
+            font-size: 1.5em;
+            color: #667eea;
+            margin: 1.2em 0 0.8em 0;
+            page-break-after: avoid;
+        }
+        
+        h4 {
+            font-size: 1.2em;
+            color: #2d3748;
+            margin: 1em 0 0.6em 0;
+        }
+        
+        p {
+            margin: 1em 0;
+            text-align: justify;
+            hyphens: auto;
+        }
+        
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5em 0;
+            page-break-inside: avoid;
+            font-size: 0.95em;
+        }
+        
+        th {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 0.8em;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        td {
+            padding: 0.6em 0.8em;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        tr:nth-child(even) {
+            background: #f7fafc;
+        }
+        
+        /* Code Blocks */
+        pre {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 1.5em;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 1.5em 0;
+            page-break-inside: avoid;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            border-left: 4px solid #667eea;
+        }
+        
+        code {
+            background: #f4f4f4;
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            color: #e83e8c;
+        }
+        
+        pre code {
+            background: none;
+            color: #f8f8f2;
+            padding: 0;
+        }
+        
+        /* Lists */
+        ul, ol {
+            margin: 1em 0 1em 2em;
+        }
+        
+        li {
+            margin: 0.5em 0;
+        }
+        
+        /* Boxes and Callouts */
+        .info-box {
+            background: linear-gradient(135deg, #d1ecf1, #bee5eb);
+            border-left: 5px solid #17a2b8;
+            padding: 1.5em;
+            margin: 1.5em 0;
+            border-radius: 8px;
+            page-break-inside: avoid;
+        }
+        
+        .warning-box {
+            background: linear-gradient(135deg, #fff3cd, #ffeaa7);
+            border-left: 5px solid #ffc107;
+            padding: 1.5em;
+            margin: 1.5em 0;
+            border-radius: 8px;
+            page-break-inside: avoid;
+        }
+        
+        .success-box {
+            background: linear-gradient(135deg, #d4edda, #c3e6cb);
+            border-left: 5px solid #28a745;
+            padding: 1.5em;
+            margin: 1.5em 0;
+            border-radius: 8px;
+            page-break-inside: avoid;
+        }
+        
+        .info-box strong, .warning-box strong, .success-box strong {
+            display: block;
+            margin-bottom: 0.5em;
+            font-size: 1.1em;
+        }
+        
+        /* Feature Cards */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5em;
+            margin: 1.5em 0;
+            page-break-inside: avoid;
+        }
+        
+        .feature-card {
+            background: #f7fafc;
+            padding: 1.5em;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            page-break-inside: avoid;
+        }
+        
+        .feature-card h4 {
+            color: #667eea;
+            margin-top: 0;
+        }
+        
+        /* Steps */
+        .step {
+            background: white;
+            padding: 1.2em;
+            margin: 1em 0;
+            border-left: 5px solid #28a745;
+            border-radius: 5px;
+            page-break-inside: avoid;
+        }
+        
+        .step-number {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            width: 2em;
+            height: 2em;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 2em;
+            font-weight: bold;
+            margin-right: 1em;
+        }
+        
+        /* Footer */
+        footer {
+            margin-top: 3em;
+            padding-top: 2em;
+            border-top: 2px solid #e2e8f0;
+            text-align: center;
+            color: #718096;
+            font-size: 0.9em;
+        }
+        
+        /* Print Optimizations */
+        @media print {
+            .cover-page {
+                page-break-after: always;
+            }
+            
+            h1, h2, h3 {
+                page-break-after: avoid;
+            }
+            
+            table, pre, .info-box, .warning-box, .success-box {
+                page-break-inside: avoid;
+            }
+            
+            img {
+                max-width: 100%;
+                height: auto;
+                page-break-inside: avoid;
+            }
+        }
+        
+        /* No print for certain elements */
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Cover Page -->
+    <div class="cover-page">
+        <h1>🤖 GeoAI Assistant Pro</h1>
+        <p class="subtitle">Enterprise-Grade AI-Powered Geospatial Assistant for QGIS</p>
+        <div class="version">
+            <strong>Version 2.0.0</strong><br>
+            QGIS 3.0+ | Python 3.9+ | MIT License
+        </div>
+        <p class="date">Technical Documentation Report<br>Generated: <script>document.write(new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }));</script></p>
+    </div>
+    
+    <!-- Table of Contents -->
+    <div class="toc-page">
+        <h1>Table of Contents</h1>
+        <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#installation">Installation</a></li>
+            <li><a href="#quick-start">Quick Start Guide</a></li>
+            <li><a href="#configuration">Configuration</a></li>
+            <li><a href="#usage">Usage Guide</a></li>
+            <li><a href="#architecture">Architecture</a></li>
+            <li><a href="#troubleshooting">Troubleshooting</a></li>
+        </ul>
+    </div>
+    
+    <!-- Content Pages -->
+    <div class="content-page">
+        <h1 id="overview">🌟 Overview</h1>
+        
+        <p><strong>GeoAI Assistant Pro</strong> is a revolutionary QGIS plugin that brings the power of Artificial Intelligence directly into your geospatial workflows. Whether you're a GIS analyst, data scientist, or developer, this plugin transforms how you interact with spatial data.</p>
+        
+        <div class="info-box">
+            <strong>🎯 Key Capabilities</strong>
+            <ul style="margin-left: 1.5em;">
+                <li><strong>Multi-Provider AI:</strong> Choose from 6+ LLM providers with 50+ models</li>
+                <li><strong>Visual Intelligence:</strong> Convert QGIS Model Builder screenshots to executable code</li>
+                <li><strong>Natural Language SQL:</strong> Describe what you want in plain English, get SQL code instantly</li>
+                <li><strong>Smart Error Fixing:</strong> AI automatically detects and fixes SQL errors</li>
+                <li><strong>Intelligent Suggestions:</strong> Get AI-powered recommendations for your projects</li>
+                <li><strong>Enterprise Features:</strong> Query history, batch processing, templates, analytics</li>
+            </ul>
+        </div>
+        
+        <h2>What Makes It Special?</h2>
+        <p>GeoAI Assistant Pro stands out with its comprehensive AI integration, supporting multiple providers and offering seamless integration with QGIS workflows. The plugin combines the power of modern LLMs with geospatial expertise, making complex spatial operations accessible through natural language.</p>
+    </div>
+    
+    <div class="content-page">
+        <h1 id="features">✨ Features</h1>
+        
+        <h2>🤖 LLM Handler - Multi-Provider AI Support</h2>
+        <p>Support for <strong>6 major AI providers</strong> with <strong>50+ models</strong>:</p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Provider</th>
+                    <th>Models</th>
+                    <th>Use Case</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>OpenAI</strong></td>
+                    <td>GPT-4, GPT-4o, GPT-3.5-turbo</td>
+                    <td>Best quality, general purpose</td>
+                </tr>
+                <tr>
+                    <td><strong>Anthropic</strong></td>
+                    <td>Claude 3.5 Sonnet, Claude 3 Opus</td>
+                    <td>Long context, detailed analysis</td>
+                </tr>
+                <tr>
+                    <td><strong>Google</strong></td>
+                    <td>Gemini 2.5 Pro, Gemini 2.5 Flash</td>
+                    <td>Fast, cost-effective</td>
+                </tr>
+                <tr>
+                    <td><strong>Ollama</strong></td>
+                    <td>phi3, mistral, llama, codellama</td>
+                    <td>Local, private, free</td>
+                </tr>
+                <tr>
+                    <td><strong>OpenRouter</strong></td>
+                    <td>100+ models</td>
+                    <td>Access to all major models</td>
+                </tr>
+                <tr>
+                    <td><strong>HuggingFace</strong></td>
+                    <td>Open-source models</td>
+                    <td>Community models</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="success-box">
+            <strong>✅ Key Features:</strong>
+            <ul style="margin-left: 1.5em;">
+                <li>Automatic retry with exponential backoff</li>
+                <li>Quota error handling</li>
+                <li>Safety settings management</li>
+                <li>Model validation</li>
+                <li>Fallback mechanisms</li>
+            </ul>
+        </div>
+        
+        <h2>🖼️ Model Converter - Image-to-Code Magic</h2>
+        <p>Convert QGIS Model Builder screenshots to executable code using Azure Computer Vision and LLM analysis.</p>
+        
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h4>📸 Screenshot Analysis</h4>
+                <p>Upload screenshots of your Model Builder workflow for AI analysis.</p>
+            </div>
+            <div class="feature-card">
+                <h4>🤖 AI Processing</h4>
+                <p>Azure Computer Vision + LLM analyze the image and generate code.</p>
+            </div>
+            <div class="feature-card">
+                <h4>💻 Code Generation</h4>
+                <p>Get clean SQL or Python code ready for execution.</p>
+            </div>
+            <div class="feature-card">
+                <h4>✅ Direct Execution</h4>
+                <p>Execute generated code directly in QGIS.</p>
+            </div>
+        </div>
+        
+        <h2>🔍 SQL Generator - Natural Language to SQL</h2>
+        <p>Transform your thoughts into SQL queries with context-aware generation.</p>
+        
+        <div class="info-box">
+            <strong>Example Query:</strong>
+            <pre><code>"Find all buildings within 500 meters of parks"
+
+Generated SQL:
+SELECT b.* 
+FROM buildings b, parks p 
+WHERE ST_DWithin(b.geom::geography, p.geom::geography, 500);</code></pre>
+        </div>
+        
+        <h2>🔧 Error Fixer - AI-Powered SQL Correction</h2>
+        <p>Never struggle with SQL errors again. The AI automatically detects and fixes:</p>
+        <ul>
+            <li>Syntax errors (<code>FORM</code> → <code>FROM</code>)</li>
+            <li>Missing keywords</li>
+            <li>Wrong table/column names</li>
+            <li>Type mismatches</li>
+            <li>Geometry column issues (<code>geometry</code> → <code>geom</code>)</li>
+            <li>Quote problems</li>
+            <li>Logical errors</li>
+        </ul>
+    </div>
+    
+    <div class="content-page">
+        <h1 id="installation">🚀 Installation</h1>
+        
+        <h2>Prerequisites</h2>
+        <ul>
+            <li>✅ <strong>QGIS 3.0 or higher</strong></li>
+            <li>✅ <strong>Python 3.9+</strong> (included with QGIS)</li>
+            <li>✅ <strong>Internet connection</strong> (for cloud-based LLM providers)</li>
+            <li>✅ <strong>Azure account</strong> (optional, for Model Converter)</li>
+        </ul>
+        
+        <h2>Step 1: Download Plugin</h2>
+        <div class="step">
+            <span class="step-number">1</span>
+            <strong>Navigate to QGIS plugins directory:</strong><br>
+            <code>~/Library/Application Support/QGIS/QGIS3/profiles/default/python/plugins/</code>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">2</span>
+            <strong>Clone or download</strong> the plugin repository
+        </div>
+        
+        <h2>Step 2: Enable Plugin</h2>
+        <div class="step">
+            <span class="step-number">1</span>
+            <strong>Restart QGIS</strong>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">2</span>
+            Go to <code>Plugins → Manage and Install Plugins</code>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">3</span>
+            Search for <strong>"GeoAI Assistant Pro"</strong>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">4</span>
+            ✅ Check the box to enable
+        </div>
+        
+        <h2>Step 3: Install Dependencies</h2>
+        <pre><code># Azure Computer Vision
+/path/to/qgis/python3 -m pip install azure-cognitiveservices-vision-computervision msrest
+
+# LLM Providers (optional)
+pip install openai anthropic google-generativeai</code></pre>
+        
+        <div class="warning-box">
+            <strong>⚠️ Important:</strong> Copy <code>.env.example</code> to <code>.env</code> and fill in your API keys before using the plugin.
+        </div>
+    </div>
+    
+    <div class="content-page">
+        <h1 id="quick-start">⚡ Quick Start Guide</h1>
+        
+        <h2>Example 1: Generate SQL from Natural Language</h2>
+        <div class="step">
+            <span class="step-number">1</span>
+            Open Plugin → Click GeoAI Assistant Pro icon
+        </div>
+        <div class="step">
+            <span class="step-number">2</span>
+            Go to <strong>SQL Generator</strong> tab
+        </div>
+        <div class="step">
+            <span class="step-number">3</span>
+            Type: <code>"Show me all buildings with area greater than 1000"</code>
+        </div>
+        <div class="step">
+            <span class="step-number">4</span>
+            Select Model from dropdown
+        </div>
+        <div class="step">
+            <span class="step-number">5</span>
+            Click <strong>Generate SQL</strong>
+        </div>
+        <div class="step">
+            <span class="step-number">6</span>
+            Click <strong>Execute</strong> → See results
+        </div>
+        
+        <h2>Example 2: Convert Image to Code</h2>
+        <div class="step">
+            <span class="step-number">1</span>
+            Go to <strong>Model Converter</strong> tab
+        </div>
+        <div class="step">
+            <span class="step-number">2</span>
+            Click <strong>Browse</strong> → Select screenshot
+        </div>
+        <div class="step">
+            <span class="step-number">3</span>
+            Select Type: SQL or Python
+        </div>
+        <div class="step">
+            <span class="step-number">4</span>
+            Click <strong>Convert to Code</strong>
+        </div>
+        <div class="step">
+            <span class="step-number">5</span>
+            Review and use generated code
+        </div>
+    </div>
+    
+    <div class="content-page">
+        <h1 id="configuration">⚙️ Configuration</h1>
+        
+        <h2>Environment Variables (.env file)</h2>
+        <pre><code># Azure Computer Vision
+AZURE_VISION_ENDPOINT=https://your-endpoint.cognitiveservices.azure.com/
+AZURE_VISION_SUBSCRIPTION_KEY=your-subscription-key-here
+
+# LLM Provider API Keys
+OPENAI_API_KEY=sk-your-key-here
+ANTHROPIC_API_KEY=sk-ant-your-key-here
+GOOGLE_API_KEY=your-google-api-key-here
+
+# Database Configuration (Optional)
+DB_HOST=localhost
+DB_PORT=5432
+DB_NAME=postgis_db
+DB_USER=postgres
+DB_PASSWORD=your-password
+
+# Ollama Configuration
+OLLAMA_BASE_URL=http://localhost:11434</code></pre>
+        
+        <div class="success-box">
+            <strong>💡 Tip:</strong> Copy <code>.env.example</code> to <code>.env</code> and fill in your values. Never commit <code>.env</code> to version control!
+        </div>
+    </div>
+    
+    <div class="content-page">
+        <h1 id="usage">📚 Usage Guide</h1>
+        
+        <h2>SQL Generator</h2>
+        <p><strong>Workflow:</strong></p>
+        <ol>
+            <li>Describe your query in natural language</li>
+            <li>Select LLM model</li>
+            <li>Click "Generate SQL"</li>
+            <li>Review and execute</li>
+            <li>View results</li>
+        </ol>
+        
+        <h2>Model Converter</h2>
+        <p><strong>Best Practices:</strong></p>
+        <ul>
+            <li>Use high-quality screenshots</li>
+            <li>Ensure Model Builder is clearly visible</li>
+            <li>Include all workflow steps</li>
+            <li>Use PNG format for best results</li>
+        </ul>
+        
+        <h2>Error Fixer</h2>
+        <p><strong>When to Use:</strong></p>
+        <ul>
+            <li>SQL syntax errors</li>
+            <li>Column name issues</li>
+            <li>Type mismatches</li>
+            <li>Geometry column problems</li>
+        </ul>
+    </div>
+    
+    <div class="content-page">
+        <h1 id="architecture">🏗️ Architecture</h1>
+        
+        <h2>Project Structure</h2>
+        <pre><code>GeoAI_Assistant_Pro/
+├── modules/          # Core modules
+│   ├── llm_handler.py
+│   ├── sql_executor.py
+│   ├── image_processor.py
+│   └── error_fixer.py
+├── core/            # Domain layer
+├── services/         # Business logic
+├── infrastructure/   # Infrastructure
+└── ui/              # User interface</code></pre>
+        
+        <h2>Design Patterns</h2>
+        <ul>
+            <li><strong>Service-Oriented Architecture:</strong> Separated business logic</li>
+            <li><strong>Component-Based UI:</strong> Modular, reusable components</li>
+            <li><strong>Provider Pattern:</strong> Pluggable LLM providers</li>
+            <li><strong>Factory Pattern:</strong> Dynamic initialization</li>
+            <li><strong>Observer Pattern:</strong> Event-driven updates</li>
+        </ul>
+    </div>
+    
+    <div class="content-page">
+        <h1 id="troubleshooting">🔧 Troubleshooting</h1>
+        
+        <h2>Common Issues</h2>
+        
+        <h3>❌ Plugin Won't Load</h3>
+        <div class="warning-box">
+            <strong>Solutions:</strong>
+            <ul style="margin-left: 1.5em;">
+                <li>Check Python syntax errors in Log Messages</li>
+                <li>Verify dependencies are installed</li>
+                <li>Clear <code>__pycache__</code> folders</li>
+                <li>Restart QGIS completely</li>
+            </ul>
+        </div>
+        
+        <h3>❌ Azure Computer Vision Not Working</h3>
+        <div class="info-box">
+            <strong>Solutions:</strong>
+            <ul style="margin-left: 1.5em;">
+                <li>Verify credentials in Settings</li>
+                <li>Check <code>.env</code> file exists</li>
+                <li>Verify endpoint is accessible</li>
+                <li>Plugin will auto-fallback to LLM</li>
+            </ul>
+        </div>
+        
+        <h3>❌ SQL Generation Fails</h3>
+        <div class="warning-box">
+            <strong>Solutions:</strong>
+            <ul style="margin-left: 1.5em;">
+                <li>Check LLM provider is configured</li>
+                <li>Verify API keys are correct</li>
+                <li>Check internet connection</li>
+                <li>Try different model</li>
+            </ul>
+        </div>
+    </div>
+    
+    <footer>
+        <p><strong>GeoAI Assistant Pro</strong> - Technical Documentation Report</p>
+        <p>Version 2.0.0 | MIT License | Generated: <script>document.write(new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }));</script></p>
+        <p>For more information, visit the project repository or contact support.</p>
+    </footer>
+    
+    <script>
+        // Print to PDF function
+        function printToPDF() {
+            window.print();
+        }
+    </script>
+</body>
+</html>
+

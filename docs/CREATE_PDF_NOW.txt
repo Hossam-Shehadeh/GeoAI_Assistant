@@ -1,0 +1,154 @@
+═══════════════════════════════════════════════════════════════════
+  📄 CREATE PDF FILE - SIMPLE STEPS
+═══════════════════════════════════════════════════════════════════
+
+Follow these EXACT steps to create documentation.pdf:
+
+═══════════════════════════════════════════════════════════════════
+  STEP 1: OPEN THE HTML FILE
+═══════════════════════════════════════════════════════════════════
+
+1. Open Finder
+2. Navigate to this folder:
+   /Users/me/Library/Application Support/QGIS/QGIS3/profiles/default/python/plugins/spatial-projects/GeoAI_Assistant_Pro_Clean/
+
+3. Find the file: documentation.html
+4. Double-click it (it will open in your default browser)
+
+✅ File is now open in browser!
+
+═══════════════════════════════════════════════════════════════════
+  STEP 2: PRINT TO PDF
+═══════════════════════════════════════════════════════════════════
+
+1. In the browser, press:
+   - Mac: Cmd + P
+   - Windows: Ctrl + P
+
+2. A print dialog will appear
+
+3. In the print dialog:
+   - Look for "Destination" or "Printer" dropdown
+   - Select "Save as PDF" (or "Save PDF" on Mac)
+   - Make sure "All pages" is selected
+   - Layout: Portrait
+   - If you see "Headers and footers", uncheck it
+
+4. Click "Save" button
+
+✅ Print dialog will close!
+
+═══════════════════════════════════════════════════════════════════
+  STEP 3: SAVE THE FILE
+═══════════════════════════════════════════════════════════════════
+
+1. A "Save" dialog will appear
+
+2. IMPORTANT - Set the location:
+   - Navigate to: /Users/me/Library/Application Support/QGIS/QGIS3/profiles/default/python/plugins/spatial-projects/GeoAI_Assistant_Pro_Clean/
+   - This is the SAME folder where documentation.html is located
+
+3. IMPORTANT - Set the filename:
+   - Name: documentation.pdf
+   - (Must be exactly "documentation.pdf" - no spaces, lowercase)
+
+4. Click "Save"
+
+✅ PDF file created!
+
+═══════════════════════════════════════════════════════════════════
+  STEP 4: VERIFY THE FILE EXISTS
+═══════════════════════════════════════════════════════════════════
+
+1. In Finder, go to the folder again:
+   /Users/me/Library/Application Support/QGIS/QGIS3/profiles/default/python/plugins/spatial-projects/GeoAI_Assistant_Pro_Clean/
+
+2. Look for: documentation.pdf
+   - You should see it in the same folder as documentation.html
+   - File size should be around 500KB - 2MB
+
+✅ File exists!
+
+═══════════════════════════════════════════════════════════════════
+  STEP 5: TEST THE DOWNLOAD BUTTON
+═══════════════════════════════════════════════════════════════════
+
+1. Go back to the browser with documentation.html open
+
+2. Refresh the page:
+   - Mac: Cmd + R
+   - Windows: Ctrl + R
+
+3. Scroll down to the bottom (footer)
+
+4. Click the "📄 Download PDF" button
+
+✅ File should download automatically!
+
+═══════════════════════════════════════════════════════════════════
+  VISUAL GUIDE
+═══════════════════════════════════════════════════════════════════
+
+Browser (documentation.html open)
+    ↓
+Press Cmd+P (or Ctrl+P)
+    ↓
+Print Dialog Appears
+    ↓
+Select "Save as PDF"
+    ↓
+Click "Save"
+    ↓
+Save Dialog Appears
+    ↓
+Navigate to correct folder
+    ↓
+Name: documentation.pdf
+    ↓
+Click "Save"
+    ↓
+✅ PDF Created!
+
+═══════════════════════════════════════════════════════════════════
+  COMMON ISSUES
+═══════════════════════════════════════════════════════════════════
+
+❌ "Save as PDF" option not showing
+   → Make sure you're using Chrome, Safari, or Firefox
+   → Try a different browser
+
+❌ File saved in wrong location
+   → Make sure you navigate to the correct folder before saving
+   → The folder should contain documentation.html
+
+❌ File name is wrong
+   → Must be exactly: documentation.pdf
+   → No spaces, all lowercase
+   → Not "Documentation.pdf" or "documentation.PDF"
+
+❌ Download button still shows error
+   → Refresh the page (Cmd+R)
+   → Make sure file is in the same folder as documentation.html
+   → Check file name is exactly "documentation.pdf"
+
+═══════════════════════════════════════════════════════════════════
+  QUICK CHECKLIST
+═══════════════════════════════════════════════════════════════════
+
+□ Opened documentation.html in browser
+□ Pressed Cmd+P (or Ctrl+P)
+□ Selected "Save as PDF"
+□ Navigated to correct folder
+□ Named file: documentation.pdf
+□ Saved the file
+□ Verified file exists in folder
+□ Refreshed browser page
+□ Clicked download button
+□ File downloaded successfully!
+
+═══════════════════════════════════════════════════════════════════
+
+🎉 Once documentation.pdf is created, the download button will work!
+
+═══════════════════════════════════════════════════════════════════
+

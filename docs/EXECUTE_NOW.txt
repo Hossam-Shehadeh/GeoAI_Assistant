@@ -1,0 +1,27 @@
+═══════════════════════════════════════════════════════════════════
+  ⚡ EXECUTE create_both_documents.py - COPY & PASTE
+═══════════════════════════════════════════════════════════════════
+
+STEP 1: Open Terminal (Cmd+Space → Type "Terminal" → Enter)
+
+STEP 2: Copy and paste these commands ONE BY ONE:
+
+─────────────────────────────────────────────────────────────────
+cd "/Users/me/Library/Application Support/QGIS/QGIS3/profiles/default/python/plugins/spatial-projects/GeoAI_Assistant_Pro_Clean"
+─────────────────────────────────────────────────────────────────
+
+─────────────────────────────────────────────────────────────────
+python3 create_both_documents.py
+─────────────────────────────────────────────────────────────────
+
+✅ Script will run and create both PDF and Word documents!
+
+═══════════════════════════════════════════════════════════════════
+
+Expected output:
+- ✅ PDF: GeoAI_Assistant_Pro_Report.pdf
+- ✅ Word: GeoAI_Assistant_Pro_Documentation.docx
+
+═══════════════════════════════════════════════════════════════════
+
+

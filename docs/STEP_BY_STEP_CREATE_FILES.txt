@@ -1,0 +1,138 @@
+═══════════════════════════════════════════════════════════════════
+  📄 CREATE PDF AND WORD FILES - STEP BY STEP
+═══════════════════════════════════════════════════════════════════
+
+The download buttons need the files to exist first. Follow these steps:
+
+═══════════════════════════════════════════════════════════════════
+  STEP 1: CREATE PDF (2 MINUTES)
+═══════════════════════════════════════════════════════════════════
+
+1. Open documentation.html:
+   - Double-click the file
+   - Or right-click → Open With → Chrome/Safari
+
+2. Print to PDF:
+   - Press Cmd+P (Mac) or Ctrl+P (Windows)
+   - In print dialog:
+     * Destination: "Save as PDF"
+     * Layout: Portrait
+     * Uncheck "Headers and footers" (if available)
+   - Click "Save"
+   - Name: documentation.pdf
+   - Location: Same folder as documentation.html
+
+✅ PDF created!
+
+═══════════════════════════════════════════════════════════════════
+  STEP 2: CREATE WORD DOCUMENT (3 MINUTES)
+═══════════════════════════════════════════════════════════════════
+
+OPTION A: Using pandoc (Recommended)
+
+1. Open Terminal
+
+2. Install pandoc (if not installed):
+   brew install pandoc
+
+3. Navigate to folder:
+   cd "/Users/me/Library/Application Support/QGIS/QGIS3/profiles/default/python/plugins/spatial-projects/GeoAI_Assistant_Pro_Clean"
+
+4. Create Word file:
+   pandoc README.md -o documentation.docx --toc --toc-depth=3
+
+✅ Word document created!
+
+
+OPTION B: Using Typora (No Command Line)
+
+1. Download Typora: https://typora.io
+2. Open README.md in Typora
+3. File → Export → Word (.docx)
+4. Save as: documentation.docx
+5. Save in same folder as README.md
+
+✅ Word document created!
+
+
+OPTION C: Online Converter
+
+1. Go to: https://cloudconvert.com/md-to-docx
+2. Upload README.md
+3. Convert
+4. Download
+5. Rename to: documentation.docx
+6. Move to same folder as README.md
+
+✅ Word document created!
+
+═══════════════════════════════════════════════════════════════════
+  STEP 3: VERIFY FILES
+═══════════════════════════════════════════════════════════════════
+
+Check that both files exist:
+
+1. Open Finder
+2. Navigate to:
+   /Users/me/Library/Application Support/QGIS/QGIS3/profiles/default/python/plugins/spatial-projects/GeoAI_Assistant_Pro_Clean/
+
+3. Look for:
+   ✅ documentation.pdf
+   ✅ documentation.docx
+
+Both files should be in the SAME folder as documentation.html
+
+═══════════════════════════════════════════════════════════════════
+  STEP 4: TEST DOWNLOAD BUTTONS
+═══════════════════════════════════════════════════════════════════
+
+1. Open documentation.html in browser
+2. Scroll to bottom (footer)
+3. Click "📄 Download PDF" or "📝 Download Word"
+4. Files should download automatically!
+
+✅ Download buttons now work!
+
+═══════════════════════════════════════════════════════════════════
+  QUICK COMMAND REFERENCE
+═══════════════════════════════════════════════════════════════════
+
+# Navigate to folder
+cd "/Users/me/Library/Application Support/QGIS/QGIS3/profiles/default/python/plugins/spatial-projects/GeoAI_Assistant_Pro_Clean"
+
+# Create PDF (Chrome method)
+/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome \
+  --headless --disable-gpu \
+  --print-to-pdf=documentation.pdf \
+  file://$(pwd)/documentation.html
+
+# Create Word (pandoc method)
+pandoc README.md -o documentation.docx --toc --toc-depth=3
+
+# Or use the automated script
+./create_files_now.sh
+
+═══════════════════════════════════════════════════════════════════
+  TROUBLESHOOTING
+═══════════════════════════════════════════════════════════════════
+
+❌ "File not found" still appears
+   → Make sure files are named exactly: documentation.pdf and documentation.docx
+   → Make sure files are in the same folder as documentation.html
+   → Refresh the browser page (Cmd+R or F5)
+
+❌ "pandoc not found"
+   → Install: brew install pandoc
+   → Or use Typora/online converter
+
+❌ Download button doesn't work after creating files
+   → Refresh the page
+   → Check file names are correct
+   → Check files are in correct location
+
+═══════════════════════════════════════════════════════════════════
+
+🎉 Once both files are created, the download buttons will work!
+
+═══════════════════════════════════════════════════════════════════
+

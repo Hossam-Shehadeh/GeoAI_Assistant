@@ -1,0 +1,144 @@
+═══════════════════════════════════════════════════════════════════
+  📄 CREATE PDF AND WORD DOCUMENTS - COMPLETE GUIDE
+═══════════════════════════════════════════════════════════════════
+
+METHOD 1: USING SCRIPT (AUTOMATED)
+═══════════════════════════════════════════════════════════════════
+
+1. Open Terminal
+
+2. Run:
+   cd "/Users/me/Library/Application Support/QGIS/QGIS3/profiles/default/python/plugins/spatial-projects/GeoAI_Assistant_Pro_Clean"
+   python3 create_both_documents.py
+
+✅ Creates both PDF and Word automatically!
+
+
+═══════════════════════════════════════════════════════════════════
+  METHOD 2: MANUAL CREATION
+═══════════════════════════════════════════════════════════════════
+
+STEP 1: CREATE PDF
+─────────────────────────────────────────────────────────────────
+
+1. Open documentation_report.html in browser
+   → Double-click the file
+
+2. Print to PDF:
+   → Press Cmd+P (Mac) or Ctrl+P (Windows)
+   → Select "Save as PDF"
+   → Save as: GeoAI_Assistant_Pro_Report.pdf
+   → Location: Same folder as HTML file
+
+✅ PDF created!
+
+
+STEP 2: CREATE WORD DOCUMENT
+─────────────────────────────────────────────────────────────────
+
+Option A: Using pandoc (Best Quality)
+─────────────────────────────────────────────────────────────────
+1. Install pandoc:
+   brew install pandoc
+
+2. Open Terminal and run:
+   cd "/Users/me/Library/Application Support/QGIS/QGIS3/profiles/default/python/plugins/spatial-projects/GeoAI_Assistant_Pro_Clean"
+   pandoc README.md -o GeoAI_Assistant_Pro_Documentation.docx --toc --toc-depth=3
+
+✅ Word document created!
+
+
+Option B: Using Typora (No Command Line)
+─────────────────────────────────────────────────────────────────
+1. Download Typora: https://typora.io
+2. Open README.md in Typora
+3. File → Export → Word (.docx)
+4. Save as: GeoAI_Assistant_Pro_Documentation.docx
+5. Save in same folder as README.md
+
+✅ Word document created!
+
+
+Option C: Online Converter
+─────────────────────────────────────────────────────────────────
+1. Go to: https://cloudconvert.com/md-to-docx
+2. Upload README.md
+3. Convert
+4. Download
+5. Rename to: GeoAI_Assistant_Pro_Documentation.docx
+6. Move to same folder as README.md
+
+✅ Word document created!
+
+
+═══════════════════════════════════════════════════════════════════
+  FILE NAMES
+═══════════════════════════════════════════════════════════════════
+
+PDF: GeoAI_Assistant_Pro_Report.pdf
+Word: GeoAI_Assistant_Pro_Documentation.docx
+
+Both files should be in:
+/Users/me/Library/Application Support/QGIS/QGIS3/profiles/default/python/plugins/spatial-projects/GeoAI_Assistant_Pro_Clean/
+
+
+═══════════════════════════════════════════════════════════════════
+  VERIFICATION
+═══════════════════════════════════════════════════════════════════
+
+After creating files, verify they exist:
+
+cd "/Users/me/Library/Application Support/QGIS/QGIS3/profiles/default/python/plugins/spatial-projects/GeoAI_Assistant_Pro_Clean"
+ls -lh GeoAI_Assistant_Pro_Report.pdf GeoAI_Assistant_Pro_Documentation.docx
+
+Expected sizes:
+- PDF: 500KB - 2MB
+- Word: 100KB - 500KB
+
+
+═══════════════════════════════════════════════════════════════════
+  QUICK COMMAND REFERENCE
+═══════════════════════════════════════════════════════════════════
+
+# Navigate to folder
+cd "/Users/me/Library/Application Support/QGIS/QGIS3/profiles/default/python/plugins/spatial-projects/GeoAI_Assistant_Pro_Clean"
+
+# Create PDF (Chrome method)
+/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome \
+  --headless --disable-gpu \
+  --print-to-pdf=GeoAI_Assistant_Pro_Report.pdf \
+  file://$(pwd)/documentation_report.html
+
+# Create Word (pandoc method)
+pandoc README.md -o GeoAI_Assistant_Pro_Documentation.docx --toc --toc-depth=3
+
+# Or use the automated script
+python3 create_both_documents.py
+
+
+═══════════════════════════════════════════════════════════════════
+  TROUBLESHOOTING
+═══════════════════════════════════════════════════════════════════
+
+❌ "Chrome not found" (for PDF)
+   → Use manual browser method: Open HTML → Print → Save as PDF
+
+❌ "pandoc not found" (for Word)
+   → Install: brew install pandoc
+   → Or use Typora/online converter
+
+❌ Files are empty or corrupted
+   → Check source files exist (documentation_report.html, README.md)
+   → Try different method
+   → Verify file permissions
+
+❌ Script fails
+   → Use manual methods instead
+   → Check all dependencies are installed
+
+═══════════════════════════════════════════════════════════════════
+
+🎉 Follow these steps to create both PDF and Word documents!
+
+═══════════════════════════════════════════════════════════════════
+
