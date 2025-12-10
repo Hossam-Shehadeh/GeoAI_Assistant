@@ -367,6 +367,69 @@ Re-execution
 
 ---
 
+## 🎬 Media Gallery
+
+### 📸 Screenshots
+
+#### Main Banner
+![GeoAI Assistant Pro Banner](media/geoai-assistant-banner-showcase.jpeg)
+
+*The main interface showcasing GeoAI Assistant Pro's powerful features and modern design.*
+
+#### Complete Workflow Overview
+![Workflow Overview Diagram](media/complete-workflow-overview-diagram.jpeg)
+
+*Complete visual representation of all workflows and features in GeoAI Assistant Pro.*
+
+---
+
+### 🎥 Video Demonstrations
+
+#### 1. Natural Language SQL Generation
+**Watch how to generate SQL queries from natural language:**
+
+[![SQL Generation Demo](media/geoai-assistant-banner-showcase.jpeg)](media/natural-language-sql-generation-demo.mp4)
+
+**Click to watch**: [Natural Language SQL Generation Workflow](media/natural-language-sql-generation-demo.mp4)
+
+**What you'll see:**
+- Natural language input processing
+- AI-powered SQL generation
+- Query validation and execution
+- Results visualization
+
+---
+
+#### 2. Model Builder to Python Converter
+**Watch how to convert QGIS Model Builder workflows to Python code:**
+
+[![Model Converter Demo](media/geoai-assistant-banner-showcase.jpeg)](media/model-builder-to-python-converter-demo.mp4)
+
+**Click to watch**: [Model Builder to Python Converter Workflow](media/model-builder-to-python-converter-demo.mp4)
+
+**What you'll see:**
+- Screenshot upload process
+- Azure Computer Vision analysis
+- Automatic Python code generation
+- Code validation and optimization
+
+---
+
+#### 3. AI-Powered Error Fixing
+**Watch how AI automatically fixes SQL errors:**
+
+[![Error Fixing Demo](media/geoai-assistant-banner-showcase.jpeg)](media/ai-powered-error-fixing-workflow-demo.mp4)
+
+**Click to watch**: [AI-Powered Error Fixing Workflow](media/ai-powered-error-fixing-workflow-demo.mp4)
+
+**What you'll see:**
+- Automatic error detection
+- Multiple fix suggestions
+- One-click error resolution
+- Query re-execution
+
+---
+
 ## 🏗️ Architecture
 
 ### System Architecture
