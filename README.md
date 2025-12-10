@@ -388,11 +388,12 @@ Re-execution
 #### 1. Natural Language SQL Generation
 **Watch how to generate SQL queries from natural language:**
 
-[![SQL Generation Demo](media/geoai-assistant-banner-showcase.jpeg)](https://github.com/Hossam-Shehadeh/GeoAI_Assistant/raw/main/media/natural-language-sql-generation-demo.mp4)
+<video width="100%" controls>
+  <source src="https://github.com/Hossam-Shehadeh/GeoAI_Assistant/raw/main/media/natural-language-sql-generation-demo.mp4" type="video/mp4">
+  Your browser does not support the video tag. [Download Video (6.5 MB)](https://github.com/Hossam-Shehadeh/GeoAI_Assistant/raw/main/media/natural-language-sql-generation-demo.mp4)
+</video>
 
 **📥 Download Video**: [Natural Language SQL Generation Workflow (6.5 MB)](https://github.com/Hossam-Shehadeh/GeoAI_Assistant/raw/main/media/natural-language-sql-generation-demo.mp4)
-
-**▶️ Watch Online**: Click the image above to download and watch the video
 
 **What you'll see:**
 - Natural language input processing
@@ -405,11 +406,12 @@ Re-execution
 #### 2. Model Builder to Python Converter
 **Watch how to convert QGIS Model Builder workflows to Python code:**
 
-[![Model Converter Demo](media/geoai-assistant-banner-showcase.jpeg)](https://github.com/Hossam-Shehadeh/GeoAI_Assistant/raw/main/media/model-builder-to-python-converter-demo.mp4)
+<video width="100%" controls>
+  <source src="https://github.com/Hossam-Shehadeh/GeoAI_Assistant/raw/main/media/model-builder-to-python-converter-demo.mp4" type="video/mp4">
+  Your browser does not support the video tag. [Download Video (9.5 MB)](https://github.com/Hossam-Shehadeh/GeoAI_Assistant/raw/main/media/model-builder-to-python-converter-demo.mp4)
+</video>
 
 **📥 Download Video**: [Model Builder to Python Converter Workflow (9.5 MB)](https://github.com/Hossam-Shehadeh/GeoAI_Assistant/raw/main/media/model-builder-to-python-converter-demo.mp4)
-
-**▶️ Watch Online**: Click the image above to download and watch the video
 
 **What you'll see:**
 - Screenshot upload process
@@ -422,11 +424,12 @@ Re-execution
 #### 3. AI-Powered Error Fixing
 **Watch how AI automatically fixes SQL errors:**
 
-[![Error Fixing Demo](media/geoai-assistant-banner-showcase.jpeg)](https://github.com/Hossam-Shehadeh/GeoAI_Assistant/raw/main/media/ai-powered-error-fixing-workflow-demo.mp4)
+<video width="100%" controls>
+  <source src="https://github.com/Hossam-Shehadeh/GeoAI_Assistant/raw/main/media/ai-powered-error-fixing-workflow-demo.mp4" type="video/mp4">
+  Your browser does not support the video tag. [Download Video (2.0 MB)](https://github.com/Hossam-Shehadeh/GeoAI_Assistant/raw/main/media/ai-powered-error-fixing-workflow-demo.mp4)
+</video>
 
 **📥 Download Video**: [AI-Powered Error Fixing Workflow (2.0 MB)](https://github.com/Hossam-Shehadeh/GeoAI_Assistant/raw/main/media/ai-powered-error-fixing-workflow-demo.mp4)
-
-**▶️ Watch Online**: Click the image above to download and watch the video
 
 **What you'll see:**
 - Automatic error detection

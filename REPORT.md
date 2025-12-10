@@ -218,11 +218,12 @@ JOIN parks p ON ST_DWithin(b.geom, p.geom, 500)
 
 #### 4.2.1 Natural Language SQL Generation
 
+<video width="100%" controls style="max-width: 800px; margin: 20px 0;">
+  <source src="https://github.com/Hossam-Shehadeh/GeoAI_Assistant/raw/main/media/natural-language-sql-generation-demo.mp4" type="video/mp4">
+  Your browser does not support the video tag. [Download Video (6.5 MB)](https://github.com/Hossam-Shehadeh/GeoAI_Assistant/raw/main/media/natural-language-sql-generation-demo.mp4)
+</video>
+
 **📥 Download Video**: [Natural Language SQL Generation Workflow (6.5 MB)](https://github.com/Hossam-Shehadeh/GeoAI_Assistant/raw/main/media/natural-language-sql-generation-demo.mp4)
-
-[![SQL Generation Demo](media/geoai-assistant-banner-showcase.jpeg)](https://github.com/Hossam-Shehadeh/GeoAI_Assistant/raw/main/media/natural-language-sql-generation-demo.mp4)
-
-*Click the image above to download and watch the video*
 
 *Figure 4: SQL Generation Workflow - Demonstrating natural language to SQL conversion process.*
 
@@ -249,11 +250,12 @@ JOIN parks p ON ST_DWithin(b.geom, p.geom, 500)
 
 #### 4.2.2 Model Builder to Python Converter
 
+<video width="100%" controls style="max-width: 800px; margin: 20px 0;">
+  <source src="https://github.com/Hossam-Shehadeh/GeoAI_Assistant/raw/main/media/model-builder-to-python-converter-demo.mp4" type="video/mp4">
+  Your browser does not support the video tag. [Download Video (9.5 MB)](https://github.com/Hossam-Shehadeh/GeoAI_Assistant/raw/main/media/model-builder-to-python-converter-demo.mp4)
+</video>
+
 **📥 Download Video**: [Model Builder to Python Converter Workflow (9.5 MB)](https://github.com/Hossam-Shehadeh/GeoAI_Assistant/raw/main/media/model-builder-to-python-converter-demo.mp4)
-
-[![Model Converter Demo](media/geoai-assistant-banner-showcase.jpeg)](https://github.com/Hossam-Shehadeh/GeoAI_Assistant/raw/main/media/model-builder-to-python-converter-demo.mp4)
-
-*Click the image above to download and watch the video*
 
 *Figure 5: Model Builder Conversion - Demonstrating visual workflow to Python code conversion.*
 
@@ -280,11 +282,12 @@ JOIN parks p ON ST_DWithin(b.geom, p.geom, 500)
 
 #### 4.2.3 AI-Powered Error Fixing
 
+<video width="100%" controls style="max-width: 800px; margin: 20px 0;">
+  <source src="https://github.com/Hossam-Shehadeh/GeoAI_Assistant/raw/main/media/ai-powered-error-fixing-workflow-demo.mp4" type="video/mp4">
+  Your browser does not support the video tag. [Download Video (2.0 MB)](https://github.com/Hossam-Shehadeh/GeoAI_Assistant/raw/main/media/ai-powered-error-fixing-workflow-demo.mp4)
+</video>
+
 **📥 Download Video**: [AI-Powered Error Fixing Workflow (2.0 MB)](https://github.com/Hossam-Shehadeh/GeoAI_Assistant/raw/main/media/ai-powered-error-fixing-workflow-demo.mp4)
-
-[![Error Fixing Demo](media/geoai-assistant-banner-showcase.jpeg)](https://github.com/Hossam-Shehadeh/GeoAI_Assistant/raw/main/media/ai-powered-error-fixing-workflow-demo.mp4)
-
-*Click the image above to download and watch the video*
 
 *Figure 6: Error Fixing Workflow - Demonstrating automatic SQL error detection and resolution.*
 
