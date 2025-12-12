@@ -15,6 +15,10 @@
 
 ---
 
+![GeoAI SQL Generator Interface](media/geoai-sql-generator-interface.png)
+
+*GeoAI Assistant Pro - SQL Generator Interface*
+
 ![GeoAI Assistant Pro Banner](media/geoai-assistant-banner-showcase.jpeg)
 
 </div>
@@ -301,7 +305,7 @@ Execution
 Results Display
 ```
 
-**Video Demo**: [Watch SQL Generation Workflow](media/natural-language-sql-generation-demo.mp4)
+**Video Demo**: [Watch SQL Generation Workflow](https://github.com/user-attachments/assets/VIDEO_ID_1)
 
 #### 2. **Model Converter Workflow**
 
@@ -319,7 +323,7 @@ Error Fixing (if needed)
 Python Code Output
 ```
 
-**Video Demo**: [Watch Model Converter Workflow](media/model-builder-to-python-converter-demo.mp4)
+**Video Demo**: [Watch Model Converter Workflow](https://github.com/user-attachments/assets/VIDEO_ID_2)
 
 #### 3. **Error Fixing Workflow**
 
@@ -337,7 +341,7 @@ Auto-Apply Fix
 Re-execution
 ```
 
-**Video Demo**: [Watch Error Fixing Workflow](media/ai-powered-error-fixing-workflow-demo.mp4)
+**Video Demo**: [Watch Error Fixing Workflow](https://github.com/user-attachments/assets/VIDEO_ID_3)
 
 ### Typical Use Cases
 
@@ -390,12 +394,15 @@ Re-execution
 #### 1. Natural Language SQL Generation
 **Watch how to generate SQL queries from natural language:**
 
-<video width="100%" controls>
-  <source src="https://github.com/Hossam-Shehadeh/GeoAI_Assistant/raw/main/media/natural-language-sql-generation-demo.mp4" type="video/mp4">
-  Your browser does not support the video tag. [Download Video (6.5 MB)](https://github.com/Hossam-Shehadeh/GeoAI_Assistant/raw/main/media/natural-language-sql-generation-demo.mp4)
+<!-- Replace VIDEO_ID_1 with your actual GitHub asset ID -->
+https://github.com/user-attachments/assets/VIDEO_ID_1
+
+<video width="100%" controls style="max-width: 100%; height: auto; display: block; margin: 20px auto;">
+  <source src="https://github.com/user-attachments/assets/VIDEO_ID_1" type="video/mp4">
+  Your browser does not support the video tag. [Download Video](https://github.com/user-attachments/assets/VIDEO_ID_1)
 </video>
 
-**📥 Download Video**: [Natural Language SQL Generation Workflow (6.5 MB)](https://github.com/Hossam-Shehadeh/GeoAI_Assistant/raw/main/media/natural-language-sql-generation-demo.mp4)
+**📥 Download Video**: [Natural Language SQL Generation Workflow](https://github.com/user-attachments/assets/VIDEO_ID_1)
 
 **What you'll see:**
 - Natural language input processing
@@ -408,12 +415,15 @@ Re-execution
 #### 2. Model Builder to Python Converter
 **Watch how to convert QGIS Model Builder workflows to Python code:**
 
-<video width="100%" controls>
-  <source src="https://github.com/Hossam-Shehadeh/GeoAI_Assistant/raw/main/media/model-builder-to-python-converter-demo.mp4" type="video/mp4">
-  Your browser does not support the video tag. [Download Video (9.5 MB)](https://github.com/Hossam-Shehadeh/GeoAI_Assistant/raw/main/media/model-builder-to-python-converter-demo.mp4)
+<!-- Replace VIDEO_ID_2 with your actual GitHub asset ID -->
+https://github.com/user-attachments/assets/VIDEO_ID_2
+
+<video width="100%" controls style="max-width: 100%; height: auto; display: block; margin: 20px auto;">
+  <source src="https://github.com/user-attachments/assets/VIDEO_ID_2" type="video/mp4">
+  Your browser does not support the video tag. [Download Video](https://github.com/user-attachments/assets/VIDEO_ID_2)
 </video>
 
-**📥 Download Video**: [Model Builder to Python Converter Workflow (9.5 MB)](https://github.com/Hossam-Shehadeh/GeoAI_Assistant/raw/main/media/model-builder-to-python-converter-demo.mp4)
+**📥 Download Video**: [Model Builder to Python Converter Workflow](https://github.com/user-attachments/assets/VIDEO_ID_2)
 
 **What you'll see:**
 - Screenshot upload process
@@ -426,12 +436,15 @@ Re-execution
 #### 3. AI-Powered Error Fixing
 **Watch how AI automatically fixes SQL errors:**
 
-<video width="100%" controls>
-  <source src="https://github.com/Hossam-Shehadeh/GeoAI_Assistant/raw/main/media/ai-powered-error-fixing-workflow-demo.mp4" type="video/mp4">
-  Your browser does not support the video tag. [Download Video (2.0 MB)](https://github.com/Hossam-Shehadeh/GeoAI_Assistant/raw/main/media/ai-powered-error-fixing-workflow-demo.mp4)
+<!-- Replace VIDEO_ID_3 with your actual GitHub asset ID -->
+https://github.com/user-attachments/assets/VIDEO_ID_3
+
+<video width="100%" controls style="max-width: 100%; height: auto; display: block; margin: 20px auto;">
+  <source src="https://github.com/user-attachments/assets/VIDEO_ID_3" type="video/mp4">
+  Your browser does not support the video tag. [Download Video](https://github.com/user-attachments/assets/VIDEO_ID_3)
 </video>
 
-**📥 Download Video**: [AI-Powered Error Fixing Workflow (2.0 MB)](https://github.com/Hossam-Shehadeh/GeoAI_Assistant/raw/main/media/ai-powered-error-fixing-workflow-demo.mp4)
+**📥 Download Video**: [AI-Powered Error Fixing Workflow](https://github.com/user-attachments/assets/VIDEO_ID_3)
 
 **What you'll see:**
 - Automatic error detection
