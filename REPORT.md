@@ -26,83 +26,84 @@
 
 <div style="font-size: 11pt; line-height: 1.8;">
 
-<p style="margin: 8pt 0; font-weight: bold; font-size: 12pt;">1. Executive Summary</p>
-<p style="margin: 4pt 0; margin-left: 20pt;">1.1. Key Achievements</p>
-<p style="margin: 4pt 0; margin-left: 20pt;">1.2. Business Impact</p>
+<p style="margin: 8pt 0; font-weight: bold; font-size: 12pt;"><a href="#executive-summary">1. Executive Summary</a></p>
+<p style="margin: 4pt 0; margin-left: 20pt;"><a href="#key-achievements">1.1. Key Achievements</a></p>
+<p style="margin: 4pt 0; margin-left: 20pt;"><a href="#business-impact">1.2. Business Impact</a></p>
 
-<p style="margin: 12pt 0; font-weight: bold; font-size: 12pt;">2. Introduction</p>
-<p style="margin: 4pt 0; margin-left: 20pt;">2.1. Background</p>
-<p style="margin: 4pt 0; margin-left: 20pt;">2.2. Solution Overview</p>
-<p style="margin: 4pt 0; margin-left: 20pt;">2.3. Technology Stack</p>
+<p style="margin: 12pt 0; font-weight: bold; font-size: 12pt;"><a href="#introduction">2. Introduction</a></p>
+<p style="margin: 4pt 0; margin-left: 20pt;"><a href="#background">2.1. Background</a></p>
+<p style="margin: 4pt 0; margin-left: 20pt;"><a href="#solution-overview">2.2. Solution Overview</a></p>
+<p style="margin: 4pt 0; margin-left: 20pt;"><a href="#technology-stack">2.3. Technology Stack</a></p>
 
-<p style="margin: 12pt 0; font-weight: bold; font-size: 12pt;">3. Project Overview</p>
-<p style="margin: 4pt 0; margin-left: 20pt;">3.1. Problem Statement</p>
-<p style="margin: 4pt 0; margin-left: 20pt;">3.2. Solution Architecture</p>
-<p style="margin: 4pt 0; margin-left: 20pt;">3.3. Target Audience</p>
+<p style="margin: 12pt 0; font-weight: bold; font-size: 12pt;"><a href="#project-overview">3. Project Overview</a></p>
+<p style="margin: 4pt 0; margin-left: 20pt;"><a href="#problem-statement">3.1. Problem Statement</a></p>
+<p style="margin: 4pt 0; margin-left: 20pt;"><a href="#solution-architecture">3.2. Solution Architecture</a></p>
+<p style="margin: 4pt 0; margin-left: 20pt;"><a href="#target-audience">3.3. Target Audience</a></p>
 
-<p style="margin: 12pt 0; font-weight: bold; font-size: 12pt;">4. Key Features & Capabilities</p>
-<p style="margin: 4pt 0; margin-left: 20pt;">4.1. SQL Generator</p>
-<p style="margin: 4pt 0; margin-left: 20pt;">4.2. Model Builder Converter</p>
-<p style="margin: 4pt 0; margin-left: 20pt;">4.3. Smart Assistant</p>
-<p style="margin: 4pt 0; margin-left: 20pt;">4.4. Error Fixer</p>
-<p style="margin: 4pt 0; margin-left: 20pt;">4.5. Data Analysis</p>
-<p style="margin: 4pt 0; margin-left: 20pt;">4.6. Additional Features</p>
+<p style="margin: 12pt 0; font-weight: bold; font-size: 12pt;"><a href="#key-features-capabilities">4. Key Features & Capabilities</a></p>
+<p style="margin: 4pt 0; margin-left: 20pt;"><a href="#sql-generator">4.1. SQL Generator</a></p>
+<p style="margin: 4pt 0; margin-left: 20pt;"><a href="#model-builder-converter">4.2. Model Builder Converter</a></p>
+<p style="margin: 4pt 0; margin-left: 20pt;"><a href="#smart-assistant">4.3. Smart Assistant</a></p>
+<p style="margin: 4pt 0; margin-left: 20pt;"><a href="#error-fixer">4.4. Error Fixer</a></p>
+<p style="margin: 4pt 0; margin-left: 20pt;"><a href="#data-analysis">4.5. Data Analysis</a></p>
+<p style="margin: 4pt 0; margin-left: 20pt;"><a href="#additional-features">4.6. Additional Features</a></p>
 
-<p style="margin: 12pt 0; font-weight: bold; font-size: 12pt;">5. Visual Documentation</p>
-<p style="margin: 4pt 0; margin-left: 20pt;">5.1. Interface Screenshots</p>
+<p style="margin: 12pt 0; font-weight: bold; font-size: 12pt;"><a href="#visual-documentation">5. Visual Documentation</a></p>
+<p style="margin: 4pt 0; margin-left: 20pt;"><a href="#interface-screenshots">5.1. Interface Screenshots</a></p>
 
-<p style="margin: 12pt 0; font-weight: bold; font-size: 12pt;">6. Technical Architecture</p>
-<p style="margin: 4pt 0; margin-left: 20pt;">6.1. System Architecture</p>
-<p style="margin: 4pt 0; margin-left: 20pt;">6.2. Core Components</p>
-<p style="margin: 4pt 0; margin-left: 40pt;">6.2.1. LLM Handler</p>
-<p style="margin: 4pt 0; margin-left: 40pt;">6.2.2. SQL Executor</p>
-<p style="margin: 4pt 0; margin-left: 40pt;">6.2.3. Error Fixer</p>
-<p style="margin: 4pt 0; margin-left: 40pt;">6.2.4. Image Processor</p>
-<p style="margin: 4pt 0; margin-left: 20pt;">6.3. Data Flow</p>
+<p style="margin: 12pt 0; font-weight: bold; font-size: 12pt;"><a href="#technical-architecture">6. Technical Architecture</a></p>
+<p style="margin: 4pt 0; margin-left: 20pt;"><a href="#system-architecture">6.1. System Architecture</a></p>
+<p style="margin: 4pt 0; margin-left: 20pt;"><a href="#core-components">6.2. Core Components</a></p>
+<p style="margin: 4pt 0; margin-left: 40pt;"><a href="#llm-handler">6.2.1. LLM Handler</a></p>
+<p style="margin: 4pt 0; margin-left: 40pt;"><a href="#sql-executor">6.2.2. SQL Executor</a></p>
+<p style="margin: 4pt 0; margin-left: 40pt;"><a href="#error-fixer-component">6.2.3. Error Fixer</a></p>
+<p style="margin: 4pt 0; margin-left: 40pt;"><a href="#image-processor">6.2.4. Image Processor</a></p>
+<p style="margin: 4pt 0; margin-left: 20pt;"><a href="#data-flow">6.3. Data Flow</a></p>
 
-<p style="margin: 12pt 0; font-weight: bold; font-size: 12pt;">7. Installation & Configuration</p>
-<p style="margin: 4pt 0; margin-left: 20pt;">7.1. Prerequisites</p>
-<p style="margin: 4pt 0; margin-left: 20pt;">7.2. Installation Steps</p>
-<p style="margin: 4pt 0; margin-left: 40pt;">7.2.1. Step 1: Download Plugin</p>
-<p style="margin: 4pt 0; margin-left: 40pt;">7.2.2. Step 2: Enable Plugin</p>
-<p style="margin: 4pt 0; margin-left: 40pt;">7.2.3. Step 3: Install Dependencies</p>
-<p style="margin: 4pt 0; margin-left: 40pt;">7.2.4. Step 4: Configuration</p>
-<p style="margin: 4pt 0; margin-left: 20pt;">7.3. Environment Configuration</p>
+<p style="margin: 12pt 0; font-weight: bold; font-size: 12pt;"><a href="#installation-configuration">7. Installation & Configuration</a></p>
+<p style="margin: 4pt 0; margin-left: 20pt;"><a href="#prerequisites">7.1. Prerequisites</a></p>
+<p style="margin: 4pt 0; margin-left: 20pt;"><a href="#installation-steps">7.2. Installation Steps</a></p>
+<p style="margin: 4pt 0; margin-left: 40pt;"><a href="#step-1-download-plugin">7.2.1. Step 1: Download Plugin</a></p>
+<p style="margin: 4pt 0; margin-left: 40pt;"><a href="#step-2-enable-plugin">7.2.2. Step 2: Enable Plugin</a></p>
+<p style="margin: 4pt 0; margin-left: 40pt;"><a href="#step-3-install-dependencies">7.2.3. Step 3: Install Dependencies</a></p>
+<p style="margin: 4pt 0; margin-left: 40pt;"><a href="#step-4-configuration">7.2.4. Step 4: Configuration</a></p>
+<p style="margin: 4pt 0; margin-left: 20pt;"><a href="#environment-configuration">7.3. Environment Configuration</a></p>
 
-<p style="margin: 12pt 0; font-weight: bold; font-size: 12pt;">8. Usage Guide</p>
-<p style="margin: 4pt 0; margin-left: 20pt;">8.1. Quick Start</p>
-<p style="margin: 4pt 0; margin-left: 20pt;">8.2. Common Workflows</p>
-<p style="margin: 4pt 0; margin-left: 40pt;">8.2.1. Workflow 1: Generate SQL Query</p>
-<p style="margin: 4pt 0; margin-left: 40pt;">8.2.2. Workflow 2: Convert Model Builder</p>
-<p style="margin: 4pt 0; margin-left: 40pt;">8.2.3. Workflow 3: Fix SQL Error</p>
-<p style="margin: 4pt 0; margin-left: 20pt;">8.3. Best Practices</p>
+<p style="margin: 12pt 0; font-weight: bold; font-size: 12pt;"><a href="#usage-guide">8. Usage Guide</a></p>
+<p style="margin: 4pt 0; margin-left: 20pt;"><a href="#quick-start">8.1. Quick Start</a></p>
+<p style="margin: 4pt 0; margin-left: 20pt;"><a href="#common-workflows">8.2. Common Workflows</a></p>
+<p style="margin: 4pt 0; margin-left: 40pt;"><a href="#workflow-1-generate-sql-query">8.2.1. Workflow 1: Generate SQL Query</a></p>
+<p style="margin: 4pt 0; margin-left: 40pt;"><a href="#workflow-2-convert-model-builder">8.2.2. Workflow 2: Convert Model Builder</a></p>
+<p style="margin: 4pt 0; margin-left: 40pt;"><a href="#workflow-3-fix-sql-error">8.2.3. Workflow 3: Fix SQL Error</a></p>
+<p style="margin: 4pt 0; margin-left: 20pt;"><a href="#best-practices">8.3. Best Practices</a></p>
 
-<p style="margin: 12pt 0; font-weight: bold; font-size: 12pt;">9. Performance Metrics</p>
-<p style="margin: 4pt 0; margin-left: 20pt;">9.1. Query Generation Performance</p>
-<p style="margin: 4pt 0; margin-left: 20pt;">9.2. Model Conversion Performance</p>
-<p style="margin: 4pt 0; margin-left: 20pt;">9.3. Error Fixing Performance</p>
-<p style="margin: 4pt 0; margin-left: 20pt;">9.4. User Satisfaction</p>
+<p style="margin: 12pt 0; font-weight: bold; font-size: 12pt;"><a href="#performance-metrics">9. Performance Metrics</a></p>
+<p style="margin: 4pt 0; margin-left: 20pt;"><a href="#query-generation-performance">9.1. Query Generation Performance</a></p>
+<p style="margin: 4pt 0; margin-left: 20pt;"><a href="#model-conversion-performance">9.2. Model Conversion Performance</a></p>
+<p style="margin: 4pt 0; margin-left: 20pt;"><a href="#error-fixing-performance">9.3. Error Fixing Performance</a></p>
+<p style="margin: 4pt 0; margin-left: 20pt;"><a href="#user-satisfaction">9.4. User Satisfaction</a></p>
 
-<p style="margin: 12pt 0; font-weight: bold; font-size: 12pt;">10. Future Roadmap</p>
-<p style="margin: 4pt 0; margin-left: 20pt;">10.1. Short-Term Goals (Q1 2025)</p>
-<p style="margin: 4pt 0; margin-left: 20pt;">10.2. Medium-Term Goals (Q2-Q3 2025)</p>
-<p style="margin: 4pt 0; margin-left: 20pt;">10.3. Long-Term Vision (2025+)</p>
+<p style="margin: 12pt 0; font-weight: bold; font-size: 12pt;"><a href="#future-roadmap">10. Future Roadmap</a></p>
+<p style="margin: 4pt 0; margin-left: 20pt;"><a href="#short-term-goals">10.1. Short-Term Goals (Q1 2025)</a></p>
+<p style="margin: 4pt 0; margin-left: 20pt;"><a href="#medium-term-goals">10.2. Medium-Term Goals (Q2-Q3 2025)</a></p>
+<p style="margin: 4pt 0; margin-left: 20pt;"><a href="#long-term-vision">10.3. Long-Term Vision (2025+)</a></p>
 
-<p style="margin: 12pt 0; font-weight: bold; font-size: 12pt;">11. Conclusion</p>
-<p style="margin: 4pt 0; margin-left: 20pt;">11.1. Key Achievements</p>
-<p style="margin: 4pt 0; margin-left: 20pt;">11.2. Impact</p>
-<p style="margin: 4pt 0; margin-left: 20pt;">11.3. Looking Forward</p>
+<p style="margin: 12pt 0; font-weight: bold; font-size: 12pt;"><a href="#conclusion">11. Conclusion</a></p>
+<p style="margin: 4pt 0; margin-left: 20pt;"><a href="#conclusion-key-achievements">11.1. Key Achievements</a></p>
+<p style="margin: 4pt 0; margin-left: 20pt;"><a href="#impact">11.2. Impact</a></p>
+<p style="margin: 4pt 0; margin-left: 20pt;"><a href="#looking-forward">11.3. Looking Forward</a></p>
 
-<p style="margin: 12pt 0; font-weight: bold; font-size: 12pt;">12. Appendix</p>
-<p style="margin: 4pt 0; margin-left: 20pt;">12.1. A. System Requirements</p>
-<p style="margin: 4pt 0; margin-left: 20pt;">12.2. B. Supported LLM Providers</p>
-<p style="margin: 4pt 0; margin-left: 20pt;">12.3. C. License</p>
-<p style="margin: 4pt 0; margin-left: 20pt;">12.4. D. Contact & Support</p>
-
-</div>
+<p style="margin: 12pt 0; font-weight: bold; font-size: 12pt;"><a href="#appendix">12. Appendix</a></p>
+<p style="margin: 4pt 0; margin-left: 20pt;"><a href="#system-requirements">12.1. A. System Requirements</a></p>
+<p style="margin: 4pt 0; margin-left: 20pt;"><a href="#supported-llm-providers">12.2. B. Supported LLM Providers</a></p>
+<p style="margin: 4pt 0; margin-left: 20pt;"><a href="#license">12.3. C. License</a></p>
+<p style="margin: 4pt 0; margin-left: 20pt;"><a href="#contact-support">12.4. D. Contact & Support</a></p>
 
 </div>
 
+</div>
+
+<a id="executive-summary"></a>
 # Executive Summary
 
 **GeoAI Assistant Pro** represents a paradigm shift in geospatial data processing, integrating cutting-edge Artificial Intelligence directly into the QGIS workflow. This revolutionary plugin transforms complex geospatial operations into intuitive natural language interactions, democratizing advanced GIS capabilities for users across all skill levels.
@@ -117,6 +118,7 @@ This comprehensive report provides an in-depth analysis of the platform's archit
 - **Multi-Provider Support**: Seamless integration with OpenAI, Anthropic, Google, Ollama, and more
 - **Enterprise-Ready**: Batch processing, templates, analytics, and comprehensive history tracking
 
+<a id="business-impact"></a>
 ## Business Impact
 
 GeoAI Assistant Pro eliminates the traditional barriers to geospatial analysis, enabling organizations to:
@@ -127,8 +129,10 @@ GeoAI Assistant Pro eliminates the traditional barriers to geospatial analysis, 
 - **Standardize Processes**: Ensure consistent results across teams and projects
 - **Democratize AI**: Enable non-technical users to leverage advanced AI capabilities
 
+<a id="introduction"></a>
 # Introduction
 
+<a id="background"></a>
 ## Background
 
 The geospatial industry faces significant challenges in processing and analyzing spatial data. Traditional methods require extensive SQL knowledge, complex scripting capabilities, and manual error debugging. These requirements create substantial barriers for:
@@ -138,6 +142,7 @@ The geospatial industry faces significant challenges in processing and analyzing
 - **Software Developers** debugging and optimizing geospatial operations
 - **Organizations** requiring consistent, error-free geospatial analysis
 
+<a id="solution-overview"></a>
 ## Solution Overview
 
 GeoAI Assistant Pro addresses these challenges through three core innovations:
@@ -146,6 +151,7 @@ GeoAI Assistant Pro addresses these challenges through three core innovations:
 2. **Visual Workflow Conversion**: Transforms QGIS Model Builder screenshots into Python code
 3. **Intelligent Error Resolution**: Automatically detects and resolves SQL errors with AI-powered solutions
 
+<a id="technology-stack"></a>
 ## Technology Stack
 
 - **Platform**: QGIS 3.0+
@@ -156,8 +162,10 @@ GeoAI Assistant Pro addresses these challenges through three core innovations:
 
 \newpage
 
+<a id="project-overview"></a>
 # Project Overview
 
+<a id="problem-statement"></a>
 ## Problem Statement
 
 Traditional GIS workflows present multiple challenges:
@@ -170,6 +178,7 @@ Traditional GIS workflows present multiple challenges:
 | Workflow Standardization | Inconsistent results | Template library and best practices |
 | Performance Optimization | Requires deep expertise | AI-powered query optimization |
 
+<a id="solution-architecture"></a>
 ## Solution Architecture
 
 GeoAI Assistant Pro provides a comprehensive solution through an integrated plugin architecture:
@@ -184,6 +193,7 @@ Query Execution Layer (SQL Executor)
 Database Layer (PostgreSQL/PostGIS)
 ```
 
+<a id="target-audience"></a>
 ## Target Audience
 
 - **Primary**: GIS Professionals, Analysts, and Technicians
@@ -193,8 +203,10 @@ Database Layer (PostgreSQL/PostGIS)
 
 \newpage
 
+<a id="key-features-capabilities"></a>
 # Key Features & Capabilities
 
+<a id="sql-generator"></a>
 ## SQL Generator
 
 **Functionality**: Transform natural language into executable SQL queries with AI assistance.
@@ -215,6 +227,7 @@ FROM buildings b
 JOIN parks p ON ST_DWithin(b.geom, p.geom, 500)
 ```
 
+<a id="model-builder-converter"></a>
 ## Model Builder Converter
 
 **Functionality**: Convert QGIS Model Builder workflows to Python code using AI vision.
@@ -233,6 +246,7 @@ JOIN parks p ON ST_DWithin(b.geom, p.geom, 500)
 4. Code is validated and optimized
 5. User can execute or modify generated code
 
+<a id="smart-assistant"></a>
 ## Smart Assistant
 
 **Functionality**: Provide intelligent suggestions and recommendations for geospatial tasks.
@@ -253,6 +267,7 @@ JOIN parks p ON ST_DWithin(b.geom, p.geom, 500)
 - Multiple fix suggestions
 - Error explanation and learning
 
+<a id="data-analysis"></a>
 ## Data Analysis
 
 **Functionality**: Quick and custom data analysis with AI-powered insights.
@@ -263,6 +278,7 @@ JOIN parks p ON ST_DWithin(b.geom, p.geom, 500)
 - Statistical summaries
 - Visualization suggestions
 
+<a id="additional-features"></a>
 ## Additional Features
 
 - **Query History**: Complete query tracking and management
@@ -272,8 +288,10 @@ JOIN parks p ON ST_DWithin(b.geom, p.geom, 500)
 
 \newpage
 
+<a id="visual-documentation"></a>
 # Visual Documentation
 
+<a id="interface-screenshots"></a>
 ## Interface Screenshots
 
 ![GeoAI Pro SQL Generator Interface](media/geoai-sql-generator-interface.png)
@@ -290,8 +308,10 @@ JOIN parks p ON ST_DWithin(b.geom, p.geom, 500)
 
 \newpage
 
+<a id="technical-architecture"></a>
 # Technical Architecture
 
+<a id="system-architecture"></a>
 ## System Architecture
 
 ```
@@ -332,32 +352,38 @@ JOIN parks p ON ST_DWithin(b.geom, p.geom, 500)
 
 *Figure 4: System Architecture - Complete technical architecture diagram showing all components and their interactions.*
 
+<a id="core-components"></a>
 ## Core Components
 
+<a id="llm-handler"></a>
 ### LLM Handler
 - Manages communication with LLM providers
 - Builds context-aware prompts
 - Handles response parsing and validation
 - Supports multiple LLM backends
 
+<a id="sql-executor"></a>
 ### SQL Executor
 - Executes SQL queries on database layers
 - Provides database context to LLM
 - Handles query results
 - Manages connection pooling
 
+<a id="error-fixer-component"></a>
 ### Error Fixer
 - Detects SQL syntax errors
 - Generates fix suggestions
 - Applies fixes automatically
 - Learns from corrections
 
+<a id="image-processor"></a>
 ### Image Processor
 - Handles screenshot uploads
 - Integrates with Azure Computer Vision
 - Processes visual workflow data
 - Converts images to code
 
+<a id="data-flow"></a>
 ## Data Flow
 
 ```
@@ -384,8 +410,10 @@ History Storage
 
 \newpage
 
+<a id="installation-configuration"></a>
 # Installation & Configuration
 
+<a id="prerequisites"></a>
 ## Prerequisites
 
 - **QGIS**: Version 3.0 or higher
@@ -394,8 +422,10 @@ History Storage
 - **Memory**: 4GB RAM minimum (8GB recommended)
 - **Internet**: Required for cloud-based LLM providers (optional for Ollama)
 
+<a id="installation-steps"></a>
 ## Installation Steps
 
+<a id="step-1-download-plugin"></a>
 ### Step 1: Download Plugin
 
 **Option A: Git Clone (Recommended)**
@@ -408,6 +438,7 @@ git clone https://github.com/Hossam-Shehadeh/GeoAI_Assistant.git GeoAI_Assistant
 1. Download the plugin folder
 2. Extract to QGIS plugins directory
 
+<a id="step-2-enable-plugin"></a>
 ### Step 2: Enable Plugin
 
 1. Open QGIS
@@ -416,6 +447,7 @@ git clone https://github.com/Hossam-Shehadeh/GeoAI_Assistant.git GeoAI_Assistant
 4. Check the box to enable
 5. Click "Close"
 
+<a id="step-3-install-dependencies"></a>
 ### Step 3: Install Dependencies
 
 **Azure Computer Vision SDK** (for Model Converter):
@@ -431,6 +463,7 @@ pip install google-generativeai  # Google
 # Ollama: Download from https://ollama.ai
 ```
 
+<a id="step-4-configuration"></a>
 ### Step 4: Configuration
 
 1. Open QGIS
@@ -442,6 +475,7 @@ pip install google-generativeai  # Google
    - Set preferences
 5. Save settings
 
+<a id="environment-configuration"></a>
 ## Environment Configuration
 
 Create `.env` file in plugin directory:
@@ -469,8 +503,10 @@ LOG_LEVEL=INFO
 
 \newpage
 
+<a id="usage-guide"></a>
 # Usage Guide
 
+<a id="quick-start"></a>
 ## Quick Start
 
 1. **Open Plugin**: `Plugins → GeoAI Assistant Pro`
@@ -479,8 +515,10 @@ LOG_LEVEL=INFO
 4. **Get Results**: Review generated SQL/code
 5. **Execute**: Run query or code in QGIS
 
+<a id="common-workflows"></a>
 ## Common Workflows
 
+<a id="workflow-1-generate-sql-query"></a>
 ### Workflow 1: Generate SQL Query
 
 ```
@@ -492,6 +530,7 @@ LOG_LEVEL=INFO
 6. View results on map
 ```
 
+<a id="workflow-2-convert-model-builder"></a>
 ### Workflow 2: Convert Model Builder
 
 ```
@@ -503,6 +542,7 @@ LOG_LEVEL=INFO
 6. Execute or modify as needed
 ```
 
+<a id="workflow-3-fix-sql-error"></a>
 ### Workflow 3: Fix SQL Error
 
 ```
@@ -514,6 +554,7 @@ LOG_LEVEL=INFO
 6. Query executes successfully
 ```
 
+<a id="best-practices"></a>
 ## Best Practices
 
 - Use clear, specific natural language queries
@@ -524,8 +565,10 @@ LOG_LEVEL=INFO
 
 \newpage
 
+<a id="performance-metrics"></a>
 # Performance Metrics
 
+<a id="query-generation-performance"></a>
 ## Query Generation Performance
 
 | Metric | Value |
@@ -535,6 +578,7 @@ LOG_LEVEL=INFO
 | Query Optimization | Automatic |
 | Error Detection Rate | 98%+ |
 
+<a id="model-conversion-performance"></a>
 ## Model Conversion Performance
 
 | Metric | Value |
@@ -544,6 +588,7 @@ LOG_LEVEL=INFO
 | Optimization Level | High |
 | Error Rate | <5% |
 
+<a id="error-fixing-performance"></a>
 ## Error Fixing Performance
 
 | Metric | Value |
@@ -553,6 +598,7 @@ LOG_LEVEL=INFO
 | Average Fix Time | 1-3 seconds |
 | Multiple Fix Options | 3-5 suggestions |
 
+<a id="user-satisfaction"></a>
 ## User Satisfaction
 
 - **Productivity Increase**: 10x faster query generation
@@ -562,8 +608,10 @@ LOG_LEVEL=INFO
 
 \newpage
 
+<a id="future-roadmap"></a>
 # Future Roadmap
 
+<a id="short-term-goals"></a>
 ## Short-Term Goals (Q1 2025)
 
 - Support for additional LLM providers
@@ -571,6 +619,7 @@ LOG_LEVEL=INFO
 - Batch processing improvements
 - Advanced analytics dashboard
 
+<a id="medium-term-goals"></a>
 ## Medium-Term Goals (Q2-Q3 2025)
 
 - Plugin marketplace integration
@@ -578,6 +627,7 @@ LOG_LEVEL=INFO
 - Cloud sync for templates
 - Collaborative features
 
+<a id="long-term-vision"></a>
 ## Long-Term Vision (2025+)
 
 - AI-powered spatial analysis recommendations
@@ -587,10 +637,12 @@ LOG_LEVEL=INFO
 
 \newpage
 
+<a id="conclusion"></a>
 # Conclusion
 
 GeoAI Assistant Pro represents a significant advancement in geospatial data processing, bringing the power of Artificial Intelligence directly into the QGIS workflow. By transforming complex operations into intuitive natural language interactions, the plugin democratizes advanced GIS capabilities and enables users of all skill levels to achieve professional results.
 
+<a id="conclusion-key-achievements"></a>
 ## Key Achievements
 
 - **10x Productivity Increase** - Complex queries generated in seconds
@@ -599,6 +651,7 @@ GeoAI Assistant Pro represents a significant advancement in geospatial data proc
 - **Enterprise-Ready** - Batch processing, templates, analytics, and history tracking
 - **Multi-Provider Support** - Seamless integration with leading LLM providers
 
+<a id="impact"></a>
 ## Impact
 
 GeoAI Assistant Pro has transformed the way GIS professionals work, eliminating traditional barriers and enabling organizations to:
@@ -609,6 +662,7 @@ GeoAI Assistant Pro has transformed the way GIS professionals work, eliminating 
 - Standardize workflows
 - Leverage AI capabilities without specialized expertise
 
+<a id="looking-forward"></a>
 ## Looking Forward
 
 As we continue to develop and enhance GeoAI Assistant Pro, we remain committed to:
@@ -620,8 +674,10 @@ As we continue to develop and enhance GeoAI Assistant Pro, we remain committed t
 
 \newpage
 
+<a id="appendix"></a>
 # Appendix
 
+<a id="system-requirements"></a>
 ## A. System Requirements
 
 - QGIS 3.0+
@@ -629,6 +685,7 @@ As we continue to develop and enhance GeoAI Assistant Pro, we remain committed t
 - 4GB RAM minimum (8GB recommended)
 - Internet connection (for cloud LLM providers)
 
+<a id="supported-llm-providers"></a>
 ## B. Supported LLM Providers
 
 - OpenAI (GPT-3.5, GPT-4)
@@ -637,10 +694,12 @@ As we continue to develop and enhance GeoAI Assistant Pro, we remain committed t
 - Ollama (Local models)
 - Custom providers (via API)
 
+<a id="license"></a>
 ## C. License
 
 This project is licensed under the MIT License.
 
+<a id="contact-support"></a>
 ## D. Contact & Support
 
 - **GitHub**: https://github.com/Hossam-Shehadeh/GeoAI_Assistant
