@@ -11,11 +11,11 @@
 </div>
 
 <div style="margin-top: 60px; border-top: 2px solid #1a237e; padding-top: 30px; width: 80%;">
-<p style="font-size: 14pt; margin: 10px 0; color: #333;">Technical Report</p>
-<p style="font-size: 12pt; margin: 5px 0; color: #666;">January 2025</p>
-<p style="font-size: 11pt; margin: 20px 0 0 0; color: #888;">GeoAI Assistant Pro Development Team</p>
-<p style="font-size: 10pt; margin: 10px 0 0 0; color: #999;">Abdullah Jamal Alhareem</p>
-<p style="font-size: 10pt; margin: 5px 0 0 0; color: #999;">Hossam Haitham Shehadeh</p>
+<p style="font-size: 14pt; margin: 10px 0; color: #000; font-weight: bold;">Technical Report</p>
+<p style="font-size: 12pt; margin: 5px 0; color: #000;">January 2025</p>
+<p style="font-size: 12pt; margin: 20px 0 10px 0; color: #000; font-weight: bold;">GeoAI Assistant Pro Development Team</p>
+<p style="font-size: 11pt; margin: 5px 0; color: #000;">Abdullah Jamal Alhareem</p>
+<p style="font-size: 11pt; margin: 5px 0; color: #000;">Hossam Haitham Shehadeh</p>
 </div>
 
 </div>
