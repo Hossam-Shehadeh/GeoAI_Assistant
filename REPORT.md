@@ -12,7 +12,10 @@
 
 <div style="margin-top: 60px; border-top: 2px solid #1a237e; padding-top: 30px; width: 80%;">
 <p style="font-size: 14pt; margin: 10px 0; color: #333;">Technical Report</p>
+<p style="font-size: 12pt; margin: 5px 0; color: #666;">January 2025</p>
 <p style="font-size: 11pt; margin: 20px 0 0 0; color: #888;">GeoAI Assistant Pro Development Team</p>
+<p style="font-size: 10pt; margin: 10px 0 0 0; color: #999;">Abdullah Jamal Alhareem</p>
+<p style="font-size: 10pt; margin: 5px 0 0 0; color: #999;">Hossam Haitham Shehadeh</p>
 </div>
 
 </div>
@@ -77,7 +80,7 @@ GeoAI Assistant Pro addresses these challenges through three core innovations:
 Traditional GIS workflows present multiple challenges:
 
 | Challenge | Impact | Solution |
-|-----------|--------|----------|
+|:----------|:-------|:---------|
 | Complex SQL Syntax | High learning curve, time-consuming | Natural language to SQL conversion |
 | Manual Error Debugging | Frustrating, error-prone | AI-powered automatic error fixing |
 | Visual to Code Conversion | Requires programming expertise | Screenshot-to-code AI conversion |
@@ -443,7 +446,7 @@ LOG_LEVEL=INFO
 ## Query Generation Performance
 
 | Metric | Value |
-|--------|-------|
+|:-------|:------|
 | Average Generation Time | 2-5 seconds |
 | Success Rate | 95%+ |
 | Query Optimization | Automatic |
@@ -452,7 +455,7 @@ LOG_LEVEL=INFO
 ## Model Conversion Performance
 
 | Metric | Value |
-|--------|-------|
+|:-------|:------|
 | Average Conversion Time | 5-10 seconds |
 | Code Accuracy | 90%+ |
 | Optimization Level | High |
@@ -461,7 +464,7 @@ LOG_LEVEL=INFO
 ## Error Fixing Performance
 
 | Metric | Value |
-|--------|-------|
+|:-------|:------|
 | Error Detection Rate | 98%+ |
 | Fix Success Rate | 95%+ |
 | Average Fix Time | 1-3 seconds |

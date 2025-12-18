@@ -65,12 +65,48 @@ def create_technical_html_template(md_content, project_root):
     # Replace inline code
     html_content = re.sub(r'`([^`]+)`', r'<code style="background: #f5f5f5; padding: 2px 4px; border-radius: 3px;">\1</code>', html_content)
     
-    # Replace markdown tables
+    # Replace markdown tables - improved processing
     def process_table(match):
         table_text = match.group(0)
-        table_text = table_text.replace('|', '</td><td>')
-        table_text = table_text.replace('\n', '</tr><tr>')
-        return f'<table style="width: 100%; border-collapse: collapse; margin: 20px 0; page-break-inside: avoid;">{table_text}</table>'
+        lines = [line.strip() for line in table_text.strip().split('\n') if line.strip()]
+        
+        if len(lines) < 2:
+            return table_text  # Not a valid table
+        
+        # Parse header
+        header_line = lines[0]
+        headers = [cell.strip() for cell in header_line.split('|')[1:-1]]
+        
+        # Skip separator line (second line)
+        rows = []
+        for line in lines[2:]:
+            cells = [cell.strip() for cell in line.split('|')[1:-1]]
+            if cells:
+                rows.append(cells)
+        
+        # Build HTML table
+        html_table = '<table style="width: 100%; border-collapse: collapse; margin: 20px 0; page-break-inside: avoid; font-size: 10pt;">'
+        
+        # Header row
+        html_table += '<thead><tr>'
+        for header in headers:
+            html_table += f'<th style="background-color: #f0f0f0; border: 1px solid #000; padding: 8pt; text-align: left; font-weight: bold;">{header}</th>'
+        html_table += '</tr></thead>'
+        
+        # Body rows
+        html_table += '<tbody>'
+        for row in rows:
+            html_table += '<tr>'
+            for cell in row:
+                html_table += f'<td style="border: 1px solid #000; padding: 6pt;">{cell}</td>'
+            html_table += '</tr>'
+        html_table += '</tbody></table>'
+        
+        return html_table
+    
+    # Match markdown tables (lines starting with |)
+    table_pattern = r'(\|.+\|\n(?:\|[-: ]+\|\n)?(?:\|.+\|\n?)+)'
+    html_content = re.sub(table_pattern, process_table, html_content, flags=re.MULTILINE)
     
     # Replace markdown lists
     html_content = re.sub(r'^- (.+)$', r'<li>\1</li>', html_content, flags=re.MULTILINE)
