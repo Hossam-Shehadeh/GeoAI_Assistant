@@ -20,6 +20,89 @@
 
 </div>
 
+<div style="page-break-after: always; padding: 20px;">
+
+<h1 style="font-size: 20pt; font-weight: bold; text-align: center; margin-top: 30pt; margin-bottom: 25pt; border-bottom: 3px solid #000; padding-bottom: 10pt;">Table of Contents</h1>
+
+<div style="font-size: 11pt; line-height: 1.8;">
+
+<p style="margin: 8pt 0; font-weight: bold; font-size: 12pt;">1. Executive Summary</p>
+<p style="margin: 4pt 0; margin-left: 20pt;">1.1. Key Achievements</p>
+<p style="margin: 4pt 0; margin-left: 20pt;">1.2. Business Impact</p>
+
+<p style="margin: 12pt 0; font-weight: bold; font-size: 12pt;">2. Introduction</p>
+<p style="margin: 4pt 0; margin-left: 20pt;">2.1. Background</p>
+<p style="margin: 4pt 0; margin-left: 20pt;">2.2. Solution Overview</p>
+<p style="margin: 4pt 0; margin-left: 20pt;">2.3. Technology Stack</p>
+
+<p style="margin: 12pt 0; font-weight: bold; font-size: 12pt;">3. Project Overview</p>
+<p style="margin: 4pt 0; margin-left: 20pt;">3.1. Problem Statement</p>
+<p style="margin: 4pt 0; margin-left: 20pt;">3.2. Solution Architecture</p>
+<p style="margin: 4pt 0; margin-left: 20pt;">3.3. Target Audience</p>
+
+<p style="margin: 12pt 0; font-weight: bold; font-size: 12pt;">4. Key Features & Capabilities</p>
+<p style="margin: 4pt 0; margin-left: 20pt;">4.1. SQL Generator</p>
+<p style="margin: 4pt 0; margin-left: 20pt;">4.2. Model Builder Converter</p>
+<p style="margin: 4pt 0; margin-left: 20pt;">4.3. Smart Assistant</p>
+<p style="margin: 4pt 0; margin-left: 20pt;">4.4. Error Fixer</p>
+<p style="margin: 4pt 0; margin-left: 20pt;">4.5. Data Analysis</p>
+<p style="margin: 4pt 0; margin-left: 20pt;">4.6. Additional Features</p>
+
+<p style="margin: 12pt 0; font-weight: bold; font-size: 12pt;">5. Visual Documentation</p>
+<p style="margin: 4pt 0; margin-left: 20pt;">5.1. Interface Screenshots</p>
+
+<p style="margin: 12pt 0; font-weight: bold; font-size: 12pt;">6. Technical Architecture</p>
+<p style="margin: 4pt 0; margin-left: 20pt;">6.1. System Architecture</p>
+<p style="margin: 4pt 0; margin-left: 20pt;">6.2. Core Components</p>
+<p style="margin: 4pt 0; margin-left: 40pt;">6.2.1. LLM Handler</p>
+<p style="margin: 4pt 0; margin-left: 40pt;">6.2.2. SQL Executor</p>
+<p style="margin: 4pt 0; margin-left: 40pt;">6.2.3. Error Fixer</p>
+<p style="margin: 4pt 0; margin-left: 40pt;">6.2.4. Image Processor</p>
+<p style="margin: 4pt 0; margin-left: 20pt;">6.3. Data Flow</p>
+
+<p style="margin: 12pt 0; font-weight: bold; font-size: 12pt;">7. Installation & Configuration</p>
+<p style="margin: 4pt 0; margin-left: 20pt;">7.1. Prerequisites</p>
+<p style="margin: 4pt 0; margin-left: 20pt;">7.2. Installation Steps</p>
+<p style="margin: 4pt 0; margin-left: 40pt;">7.2.1. Step 1: Download Plugin</p>
+<p style="margin: 4pt 0; margin-left: 40pt;">7.2.2. Step 2: Enable Plugin</p>
+<p style="margin: 4pt 0; margin-left: 40pt;">7.2.3. Step 3: Install Dependencies</p>
+<p style="margin: 4pt 0; margin-left: 40pt;">7.2.4. Step 4: Configuration</p>
+<p style="margin: 4pt 0; margin-left: 20pt;">7.3. Environment Configuration</p>
+
+<p style="margin: 12pt 0; font-weight: bold; font-size: 12pt;">8. Usage Guide</p>
+<p style="margin: 4pt 0; margin-left: 20pt;">8.1. Quick Start</p>
+<p style="margin: 4pt 0; margin-left: 20pt;">8.2. Common Workflows</p>
+<p style="margin: 4pt 0; margin-left: 40pt;">8.2.1. Workflow 1: Generate SQL Query</p>
+<p style="margin: 4pt 0; margin-left: 40pt;">8.2.2. Workflow 2: Convert Model Builder</p>
+<p style="margin: 4pt 0; margin-left: 40pt;">8.2.3. Workflow 3: Fix SQL Error</p>
+<p style="margin: 4pt 0; margin-left: 20pt;">8.3. Best Practices</p>
+
+<p style="margin: 12pt 0; font-weight: bold; font-size: 12pt;">9. Performance Metrics</p>
+<p style="margin: 4pt 0; margin-left: 20pt;">9.1. Query Generation Performance</p>
+<p style="margin: 4pt 0; margin-left: 20pt;">9.2. Model Conversion Performance</p>
+<p style="margin: 4pt 0; margin-left: 20pt;">9.3. Error Fixing Performance</p>
+<p style="margin: 4pt 0; margin-left: 20pt;">9.4. User Satisfaction</p>
+
+<p style="margin: 12pt 0; font-weight: bold; font-size: 12pt;">10. Future Roadmap</p>
+<p style="margin: 4pt 0; margin-left: 20pt;">10.1. Short-Term Goals (Q1 2025)</p>
+<p style="margin: 4pt 0; margin-left: 20pt;">10.2. Medium-Term Goals (Q2-Q3 2025)</p>
+<p style="margin: 4pt 0; margin-left: 20pt;">10.3. Long-Term Vision (2025+)</p>
+
+<p style="margin: 12pt 0; font-weight: bold; font-size: 12pt;">11. Conclusion</p>
+<p style="margin: 4pt 0; margin-left: 20pt;">11.1. Key Achievements</p>
+<p style="margin: 4pt 0; margin-left: 20pt;">11.2. Impact</p>
+<p style="margin: 4pt 0; margin-left: 20pt;">11.3. Looking Forward</p>
+
+<p style="margin: 12pt 0; font-weight: bold; font-size: 12pt;">12. Appendix</p>
+<p style="margin: 4pt 0; margin-left: 20pt;">12.1. A. System Requirements</p>
+<p style="margin: 4pt 0; margin-left: 20pt;">12.2. B. Supported LLM Providers</p>
+<p style="margin: 4pt 0; margin-left: 20pt;">12.3. C. License</p>
+<p style="margin: 4pt 0; margin-left: 20pt;">12.4. D. Contact & Support</p>
+
+</div>
+
+</div>
+
 # Executive Summary
 
 **GeoAI Assistant Pro** represents a paradigm shift in geospatial data processing, integrating cutting-edge Artificial Intelligence directly into the QGIS workflow. This revolutionary plugin transforms complex geospatial operations into intuitive natural language interactions, democratizing advanced GIS capabilities for users across all skill levels.
